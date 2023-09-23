@@ -17,28 +17,6 @@ function ProjectList() {
         <div className="md:flex md:flex-col">
           <div className="md:flex py-10">
             <Image
-              src={"/f1-thumbnail.png"}
-              alt="f1-project-dimnyan"
-              width={300}
-              height={200}
-              className="shadow-lg mb-6 aspect-video object-cover"
-            />
-            <div className="md:px-6 md:w-2/3">
-              <p className=" text-lg md:text-lg text-justify font-bold pb-2">
-                F1 Standings Tracker - ReactJS
-              </p>
-              <p className=" text-sm md:text-justify text-gray-800 ">
-                {`The "F1 Standings Tracker" is a web frontend project built using ReactJS that allows Formula 1 enthusiasts to stay updated with the latest drivers' standings in the F1 racing season. This dynamic and user-friendly application fetches data from an API source to provide real-time information about the current standings of F1 drivers, their points, and their team affiliations.`}
-              </p>
-              <button className=" bg-cyan-300 w-max text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
-                <Link href="https://f1-dimnyan.netlify.app" target="_blank">
-                  View Project
-                </Link>
-              </button>
-            </div>
-          </div>
-          <div className="md:flex py-10">
-            <Image
               src={"/landing-thumbnail.png"}
               alt="penguin-project-dimnyan"
               width={300}
@@ -58,6 +36,28 @@ function ProjectList() {
                   target="_blank"
                 >
                   View Source Code
+                </Link>
+              </button>
+            </div>
+          </div>
+          <div className="md:flex py-10">
+            <Image
+              src={"/f1-thumbnail.png"}
+              alt="f1-project-dimnyan"
+              width={300}
+              height={200}
+              className="shadow-lg mb-6 aspect-video object-cover"
+            />
+            <div className="md:px-6 md:w-2/3">
+              <p className=" text-lg md:text-lg text-justify font-bold pb-2">
+                F1 Standings Tracker - ReactJS API
+              </p>
+              <p className=" text-sm md:text-justify text-gray-800 ">
+                {`The "F1 Standings Tracker" is a web frontend project built using ReactJS that allows Formula 1 enthusiasts to stay updated with the latest drivers' standings in the F1 racing season. This dynamic and user-friendly application fetches data from an API source to provide real-time information about the current standings of F1 drivers, their points, and their team affiliations.`}
+              </p>
+              <button className=" bg-cyan-300 w-max text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
+                <Link href="https://f1-dimnyan.netlify.app" target="_blank">
+                  View Project
                 </Link>
               </button>
             </div>
