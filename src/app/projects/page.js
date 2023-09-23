@@ -1,3 +1,5 @@
+"use client";
+import ContactMe from "@/components/ContactMe";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ProjectBanner from "@/components/ProjectBanner";
@@ -9,6 +11,7 @@ function Projects() {
       <Navbar />
       <ProjectBanner />
       <ProjectList />
+      <ContactMe />
       <Footer />
     </div>
   );

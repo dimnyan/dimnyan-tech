@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-img {
+.bg-img-project-banner {
   background-image: url(/code-bg-2.webp);
+}
+
+.bg-img-to-project {
+  background-image: url(/projects-bg.webp);
+}
+
+.bg-img-contact-banner {
+  background-image: url(/contact-bg.webp);
 }

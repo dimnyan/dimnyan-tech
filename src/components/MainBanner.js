@@ -1,3 +1,5 @@
+"use client";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -7,37 +9,40 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { motion } from "framer-motion";
 
 const MainBanner = () => {
   return (
     <div className="bg-gray-800 text-white py-10 md:flex pt-20 pb-12 px-12 md:px-24 md:py-40">
-      <div className="max-w-screen-xl mx-auto flex flex-col justify-center">
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 1, opacity: 1 }}
+        transition={{
+          duration: 0.8,
+        }}
+        className="max-w-screen-xl mx-auto flex flex-col justify-center"
+      >
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 ">
-          Experienced ReactJS Developer
+          Bringing Ideas to Life on the Web
         </h1>
         <p className=" text-lg md:text-lg text-left py-2">
-          I build awesome web applications with React.
+          Creating stunning web solutions using the power of React.
         </p>
         <div className="py-5 flex justify-between w-40">
           <FontAwesomeIcon
             icon={faReact}
-            className="w-5 stroke-cyan-500"
             style={{ color: "#06b6d4" }}
+            size="xl"
           />
-          <FontAwesomeIcon
-            icon={faJs}
-            className="w-5"
-            style={{ color: "#F0DB4F" }}
-          />
+          <FontAwesomeIcon icon={faJs} size="xl" style={{ color: "#F0DB4F" }} />
           <FontAwesomeIcon
             icon={faHtml5}
-            className="w-5"
+            size="xl"
             style={{ color: "#f06529" }}
           />
           <FontAwesomeIcon
             icon={faUbuntu}
-            className="w-5"
+            size="xl"
             style={{ color: "#ffa600" }}
           />
         </div>
@@ -48,8 +53,15 @@ const MainBanner = () => {
         >
           Contact Me
         </Link>
-      </div>
-      <div className="max-w-screen-xl mx-auto md:mt-0 md:px-6 py-14">
+      </motion.div>
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 1, opacity: 1 }}
+        transition={{
+          duration: 0.8,
+        }}
+        className="max-w-screen-xl mx-auto md:mt-0 md:px-6 py-14"
+      >
         <Image
           src="/my-icon.png"
           width={300}
@@ -57,7 +69,7 @@ const MainBanner = () => {
           alt="Your Photo"
           className="mx-auto w-full md:w-auto"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
