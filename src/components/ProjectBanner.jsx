@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function ProjectBanner() {
   return (
-    <div className=" text-white md:flex py-20 md:px-24 md:py-72 px-12 bg-img-project-banner bg-fixed bg-center bg-cover">
+    <div className=" text-white md:flex py-20 md:px-24 md:py-72 px-12 bg-img-project-banner lg:bg-fixed bg-cover">
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 1, opacity: 1 }}

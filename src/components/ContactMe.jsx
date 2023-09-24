@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function ContactMe() {
   return (
-    <div className=" text-white md:flex py-20 md:px-24 md:py-60 px-12 bg-img-contact-banner bg-fixed bg-center bg-cover">
+    <div className=" text-white md:flex py-20 md:px-24 md:py-60 px-12 bg-img-contact-banner lg:bg-fixed bg-center bg-cover">
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 1, opacity: 1 }}
