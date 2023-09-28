@@ -23,7 +23,8 @@ const MainBanner = () => {
         className="max-w-screen-xl mx-auto flex flex-col justify-center"
       >
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 ">
-          Bringing Ideas to Life on the Web
+          Bringing Ideas to Life on the
+          <font className="text-orange-400"> Web</font>
         </h1>
         <p className=" text-lg md:text-lg text-left py-2">
           Creating stunning web solutions using the power of React.
