@@ -67,8 +67,9 @@ const MainBanner = () => {
           src="/my-icon.png"
           width={300}
           height={300}
-          alt="Your Photo"
+          alt="Dimas Nyoman Profile Pict"
           className="mx-auto w-full md:w-auto"
+          priority="true"
         />
       </motion.div>
     </div>
