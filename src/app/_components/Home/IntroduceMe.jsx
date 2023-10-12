@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function IntroduceMe() {
   return (
-    <div className=" bg-cyan-100 text-white py-10  md:py-20">
+    <div className=" bg-gradient-to-br from-cyan-100 to-cyan-300 text-white py-10  md:py-20">
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 1, opacity: 1 }}
@@ -25,11 +25,11 @@ function IntroduceMe() {
           </h2>
         </div>
         <div className="max-w-screen-xl mx-auto ">
-          <p className=" text-lg md:text-xl px-6 pt-5 text-black tracking-wider">
+          <p className=" text-xl font-bold px-6 pt-5 text-black tracking-wider">
             Experiences
           </p>
           <div className="pt-6 pb-3">
-            <h2 className="text-xl  font-bold mb-2 px-6 text-black">
+            <h2 className="text-lg md:text-xl font-bold mb-2 pl-6 text-black">
               PT. LSP Gatensi Karya Konstruksi
             </h2>
             <p className=" text-sm px-6 mb-2 text-black ">
@@ -38,7 +38,7 @@ function IntroduceMe() {
             <p className=" text-xs px-6 text-gray-800">Jan 2023 - Present</p>
           </div>
           <div className="pt-6 pb-3">
-            <h2 className="text-xl  font-bold mb-2 px-6 text-black">
+            <h2 className="text-lg md:text-xl  font-bold mb-2 px-6 text-black">
               PT. Equnix Business Solution
             </h2>
             <p className=" text-sm px-6 mb-2 text-black ">
@@ -47,7 +47,7 @@ function IntroduceMe() {
             <p className=" text-xs px-6 text-gray-800">Apr 2021 - Jul 2021</p>
           </div>
           <div className="pt-6 pb-4">
-            <h2 className="text-xl  font-bold mb-1 px-6 text-black">
+            <h2 className="text-lg md:text-xl  font-bold mb-1 px-6 text-black">
               Lab Universitas Gunadarma
             </h2>
             <p className=" text-sm px-6 mb-2 text-black ">as Lab Asisstant</p>

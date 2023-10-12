@@ -13,7 +13,10 @@ import { motion } from "framer-motion";
 
 const MainBanner = () => {
   return (
-    <div className="bg-gray-800 text-white py-10 md:flex pt-20 pb-12 px-12 md:px-24 md:py-40">
+    <div
+      style={{ color: "#ECECF9" }}
+      className="bg-gradient-to-br from-gray-800 to-gray-900  py-10 md:flex pt-20 pb-12 px-12 md:px-24 md:py-40"
+    >
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 1, opacity: 1 }}
@@ -24,7 +27,10 @@ const MainBanner = () => {
       >
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 ">
           Bringing Ideas to Life on the
-          <font className="text-orange-400"> Web</font>
+          <font className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
+            {" "}
+            Web
+          </font>
         </h1>
         <p className=" text-lg md:text-lg text-left py-2">
           Creating stunning web solutions using the power of React.
@@ -50,7 +56,7 @@ const MainBanner = () => {
         <Link
           href="mailto:dimas@dimnyan.tech"
           target="_blank"
-          className=" bg-cyan-300 w-max text-black px-6 mt-6 py-3 text-lg font-semibold rounded-full hover:bg-blue-100 transition duration-300"
+          className=" bg-gradient-to-br from-green-300 to-green-600 w-max text-black px-6 mt-6 py-3 text-lg font-semibold rounded-full hover:bg-blue-100 transition duration-300"
         >
           Contact Me
         </Link>

@@ -1,12 +1,11 @@
-import "./globals.css";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Home | dimnyan",
+  title: "Projects | dimnyan",
   description:
-    "Nyoman Lanang Kresna | Indonesian Front-End IT Web Developer specialized in ReactJS",
+    "Nyoman Lanang Kresna | Project List Portofolio | Indonesian Front-End IT Web Developer specialized in ReactJS",
 };
 
 export default function RootLayout({ children }) {

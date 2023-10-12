@@ -10,7 +10,7 @@ function ToProjects() {
         transition={{
           duration: 0.8,
         }}
-        className="max-w-screen-xl mx-auto flex flex-col md:items-center md:justify-center"
+        className="max-w-screen-xl mx-auto flex flex-col lg:items-center md:justify-center"
       >
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 ">
           Where Art Meets Technology
@@ -19,7 +19,7 @@ function ToProjects() {
 
         <Link
           href="./projects"
-          className=" bg-green-300 w-max text-black px-6 mt-6 py-3 text-md font-semibold rounded-full hover:bg-blue-100 transition duration-300"
+          className=" bg-gradient-to-br from-green-300 to-green-600 w-max text-black px-6 mt-6 py-3 text-md font-semibold rounded-full hover:bg-blue-100 transition duration-300"
         >
           View Projects
         </Link>

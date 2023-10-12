@@ -1,9 +1,9 @@
 "use client";
-import Footer from "@/components/Footer";
-import IntroduceMe from "@/components/IntroduceMe";
-import MainBanner from "@/components/MainBanner";
-import Navbar from "@/components/Navbar";
-import ToProjects from "@/components/ToProjects";
+import Footer from "@/app/_components/Misc/Footer";
+import IntroduceMe from "@/app/_components/Home/IntroduceMe";
+import MainBanner from "@/app/_components/Home/MainBanner";
+import Navbar from "@/app/_components/Misc/Navbar";
+import ToProjects from "@/app/_components/Home/ToProjects";
 
 export default function Home() {
   return (

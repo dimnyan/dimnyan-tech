@@ -13,10 +13,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-10">
         <Link className="flex items-center" href="/">
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-br from-white to-slate-200">
             dimnyan
           </span>
         </Link>
@@ -50,10 +50,12 @@ const Navbar = () => {
               <Link
                 href="/"
                 className={` ${
-                  pathname === "/" ? "md:text-white md:border-b-2 md:pb-1" : ""
-                } block text-right py-2 pl-3 pr-4 text-white   md:bg-transparent  md:p-0 dark:text-white`}
+                  pathname === "/"
+                    ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500 "
+                    : "text-transparent bg-gradient-to-br from-white to-slate-200"
+                } block text-right py-2 pl-3 pr-4 bg-clip-text  font-extrabold md:bg-transparent  md:p-0 `}
               >
-                Home
+                HOME
               </Link>
             </li>
             <li>
@@ -61,11 +63,11 @@ const Navbar = () => {
                 href="/projects"
                 className={` ${
                   pathname === "/projects"
-                    ? "md:text-white md:border-b-2 md:pb-1"
-                    : ""
-                } block text-right py-2 pl-3 pr-4 text-white md:bg-transparent  md:p-0 dark:text-white md:mr-2 `}
+                    ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500 "
+                    : "text-transparent bg-gradient-to-br from-white to-slate-200"
+                } block text-right py-2 pl-3 pr-4 bg-clip-text  font-extrabold md:bg-transparent  md:p-0  md:mr-2 `}
               >
-                Projects
+                PROJECTS
               </Link>
             </li>
           </ul>
