@@ -70,7 +70,7 @@ const MainBanner = () => {
         className="max-w-screen-xl mx-auto md:mt-0 md:px-6 py-14"
       >
         <Image
-          src="/my-icon.png"
+          src="/images/my-icon.png"
           width={300}
           height={300}
           alt="Dimas Nyoman Profile Pict"
