@@ -53,7 +53,7 @@ const Navbar = () => {
                   pathname === "/"
                     ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500 "
                     : "text-transparent bg-gradient-to-br from-white to-slate-200"
-                } block text-right py-2 pl-3 pr-4 bg-clip-text  font-extrabold md:bg-transparent  md:p-0 `}
+                } block text-right w-max ml-auto py-2 pl-3 pr-4 bg-clip-text font-extrabold md:bg-transparent md:p-0 `}
               >
                 HOME
               </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
                   pathname === "/projects"
                     ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500 "
                     : "text-transparent bg-gradient-to-br from-white to-slate-200"
-                } block text-right py-2 pl-3 pr-4 bg-clip-text  font-extrabold md:bg-transparent  md:p-0  md:mr-2 `}
+                } block text-right w-max ml-auto py-2 pl-3 pr-4 bg-clip-text  font-extrabold md:bg-transparent  md:p-0  md:mr-2 `}
               >
                 PROJECTS
               </Link>

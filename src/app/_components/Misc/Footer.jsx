@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pb-3 pt-20">
+    <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-white pb-3 pt-20">
       <div className="max-w-screen-xl mx-auto px-10 mb-10 md:flex text-center md:justify-center md:gap-20">
         <div className="pb-10 ">
           <h2 className="text-md  font-bold pb-5">Contacts</h2>
