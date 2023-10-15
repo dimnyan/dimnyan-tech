@@ -33,7 +33,7 @@ function IntroduceMe() {
               PT. LSP Gatensi Karya Konstruksi
             </h2>
             <p className=" text-sm px-6 mb-2 text-black ">
-              as Front-End Web Dev
+              as Front-End Web Engineer
             </p>
             <p className=" text-xs px-6 text-gray-800">Jan 2023 - Present</p>
           </div>
