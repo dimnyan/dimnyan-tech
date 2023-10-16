@@ -37,11 +37,24 @@ const FeaturedProject = () => {
             <p className="text-slate-300 text-base pb-5 md:pb-2 md:text-justify">
               {recentProject.description}
             </p>
-            <button className="bg-gradient-to-br from-green-300 to-green-500 w-max text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
-              <Link href={recentProject.buttonLink} target="_blank">
-                {recentProject.buttonTitle}
+            <button className=" bg-gradient-to-br from-green-300 to-green-500 w-max mr-5 text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
+              <Link href={recentProject.sourceCodeLink} target="_blank">
+                View Source Code
               </Link>
             </button>
+            {recentProject.livePageLink && (
+              <button className=" bg-gradient-to-br from-green-300 to-green-500 w-max text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
+                <Link
+                  href={recentProject.livePageLink}
+                  target="_blank"
+                  className="flex items-center"
+                >
+                  <div className="animate-ping absolute w-2.5 h-2.5 bg-red-600 rounded-full mr-2"></div>
+                  <div className=" w-2.5 h-2.5 bg-red-600 rounded-full mr-2"></div>
+                  View Page
+                </Link>
+              </button>
+            )}
           </div>
         </div>
       </motion.div>
