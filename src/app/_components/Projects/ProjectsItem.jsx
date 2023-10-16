@@ -32,14 +32,22 @@ const ProjectsItem = () => {
             <p className="text-slate-300 text-sm md:text-justify  ">
               {item.description}
             </p>
-
-            <button className=" bg-gradient-to-br from-green-300 to-green-500 w-max mr-5 text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
-              <Link href={item.sourceCodeLink} target="_blank">
-                View Source Code
-              </Link>
-            </button>
+            {item.sourceCodeLink ? (
+              <button className=" bg-gradient-to-br from-blue-100 to-blue-300 w-max mr-5 text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
+                <Link href={item.sourceCodeLink} target="_blank">
+                  View Source Code
+                </Link>
+              </button>
+            ) : (
+              <button
+                disabled
+                className=" bg-gradient-to-br from-slate-100 to-slate-300 w-max mr-5 text-slate-500 px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300"
+              >
+                Not Available to View
+              </button>
+            )}
             {item.livePageLink && (
-              <button className=" bg-gradient-to-br from-green-300 to-green-500 w-max text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
+              <button className=" bg-gradient-to-br from-green-300 to-green-600 w-max text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
                 <Link
                   href={item.livePageLink}
                   target="_blank"

@@ -6,14 +6,14 @@ import Link from "next/link";
 const FeaturedProject = () => {
   const recentProject = Projects[0];
   return (
-    <div className="bg-gradient-to-br from-slate-700 to-slate-950 text-black py-10 md:flex md:py-20 pt-20 pb-12 px-12 md:p-12 ">
+    <div className="bg-gradient-to-br from-slate-700 to-slate-950 text-black py-10 md:flex md:py-20 pt-20 pb-12 px-12 md:p-12">
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 1, opacity: 1 }}
         transition={{
           duration: 0.8,
         }}
-        className="max-w-screen-xl flex flex-col"
+        className="max-w-screen-xl flex flex-col mx-auto"
         style={{ color: "#ECECF9" }}
       >
         <h1 className="text-4xl md:text-5xl font-extrabold md:mb-10 md:text-center">
@@ -37,13 +37,22 @@ const FeaturedProject = () => {
             <p className="text-slate-300 text-base pb-5 md:pb-2 md:text-justify">
               {recentProject.description}
             </p>
-            <button className=" bg-gradient-to-br from-green-300 to-green-500 w-max mr-5 text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
-              <Link href={recentProject.sourceCodeLink} target="_blank">
-                View Source Code
-              </Link>
-            </button>
+            {recentProject.sourceCodeLink ? (
+              <button className=" bg-gradient-to-br from-blue-100 to-blue-300 w-max mr-5 text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
+                <Link href={recentProject.sourceCodeLink} target="_blank">
+                  View Source Code
+                </Link>
+              </button>
+            ) : (
+              <button
+                disabled
+                className=" bg-gradient-to-br from-slate-100 to-slate-300 w-max mr-5 text-slate-500 px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300"
+              >
+                Source Code Not Available to View
+              </button>
+            )}
             {recentProject.livePageLink && (
-              <button className=" bg-gradient-to-br from-green-300 to-green-500 w-max text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
+              <button className=" bg-gradient-to-br from-green-300 to-green-600 w-max text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
                 <Link
                   href={recentProject.livePageLink}
                   target="_blank"
