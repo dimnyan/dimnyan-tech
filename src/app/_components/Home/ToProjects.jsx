@@ -21,7 +21,7 @@ function ToProjects() {
           href="./projects"
           className=" bg-gradient-to-br from-green-300 to-green-600 w-max text-black px-6 mt-6 py-3 text-md font-semibold rounded-full hover:bg-blue-100 transition duration-300"
         >
-          View Projects
+          See My Projects
         </Link>
       </motion.div>
     </div>
