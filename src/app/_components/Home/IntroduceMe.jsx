@@ -18,6 +18,7 @@ function IntroduceMe() {
       period: "Mar 2021 - Sept 2022",
     },
   ];
+
   return (
     <div className=" bg-gradient-to-br from-green-100 to-green-300 text-white pt-10 md:py-20">
       <div
