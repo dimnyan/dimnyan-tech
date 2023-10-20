@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { stagger, useAnimate } from "framer-motion";
+import { motion, scroll, stagger, useAnimate, useScroll } from "framer-motion";
 
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
@@ -11,6 +11,8 @@ const useMenuAnimation = (isOpen) => {
   const [scope, animate] = useAnimate();
   // const mobileNavBox = document.getElementById("nav-box");
   useEffect(() => {
+    // scroll((progress) => console.log(progress));
+
     animate(
       "#nav-box",
       // mobileNavBox,
@@ -40,14 +42,29 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
   const scope = useMenuAnimation(isOpen);
+  // const [scaler, setScaler] = useState(1);
 
-  // const toggleNavbar = () => {
-  //   setIsOpen(!isOpen);
-  // };
+  // const { scrollYProgress } = useScroll();
+
+  // useEffect(() => {
+  //   if (scrollYProgress.current > 0.27) {
+  //     setScaler(0.7);
+  //   } else if (scrollYProgress.current < 0.27) {
+  //     setScaler(scrollYProgress.current * 0.038571);
+  //   } else if (scrollYProgress.current == 0) {
+  //     setScaler(1);
+  //   }
+  // }, [scrollYProgress.current]);
+
+  //0 - 0.027
+  //scale 1 - 0.7
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900" ref={scope}>
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-10">
+    <nav className="border-gray-200 bg-gray-900 sticky top-0 z-10" ref={scope}>
+      <motion.div
+        // style={{ scale: scaler }}
+        className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-10"
+      >
         <Link className="flex items-center" href="/">
           <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-br from-white to-slate-200">
             dimnyan
@@ -82,42 +99,42 @@ const Navbar = () => {
             />
           </svg> */}
         </button>
-        <div
-          className={`${
-            isOpen ? "fixed" : "fixed hidden"
-          } top-0 left-0 md:block w-2/3 z-10`}
-          id="nav-box"
-        >
-          <ul className="font-medium h-screen py-16 pl-6 md:pl-10 border-r border-yellow-600 rounded-lg w-full bg-gray-900 dark:border-gray-900">
-            <li>
-              <Link
-                href="/"
-                className={` ${
-                  pathname === "/"
-                    ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500 "
-                    : "text-transparent bg-gradient-to-br from-white to-slate-200"
-                } block text-3xl md:text-6xl text-right w-max mr-auto py-6 md:pl-8 pr-4 bg-clip-text font-extrabold md:bg-transparent `}
-                onClick={() => setIsOpen(false)}
-              >
-                HOME
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/projects"
-                className={` ${
-                  pathname === "/projects"
-                    ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500"
-                    : "text-transparent bg-gradient-to-br from-white to-slate-200"
-                } block text-3xl md:text-6xl text-right w-max mr-auto py-6 md:pl-8 pr-4 bg-clip-text font-extrabold md:bg-transparent`}
-                onClick={() => setIsOpen(false)}
-              >
-                PROJECTS
-              </Link>
-            </li>
-          </ul>
-          {/* <div className="fixed bg-slate-50/10 h-screen right-0 top-0 w-1/2"></div> */}
-        </div>
+      </motion.div>
+      <div
+        className={`${
+          isOpen ? "fixed" : "fixed hidden"
+        } top-0 left-0 md:block w-2/3 z-10`}
+        id="nav-box"
+      >
+        <ul className="font-medium h-screen py-16 pl-6 md:pl-10 border-r border-yellow-600 rounded-lg w-full bg-gray-900 dark:border-gray-900">
+          <li>
+            <Link
+              href="/"
+              className={` ${
+                pathname === "/"
+                  ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500 "
+                  : "text-transparent bg-gradient-to-br from-white to-slate-200"
+              } block text-3xl md:text-6xl text-right w-max mr-auto py-6 md:pl-8 pr-4 bg-clip-text font-extrabold md:bg-transparent `}
+              onClick={() => setIsOpen(false)}
+            >
+              HOME
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/projects"
+              className={` ${
+                pathname === "/projects"
+                  ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500"
+                  : "text-transparent bg-gradient-to-br from-white to-slate-200"
+              } block text-3xl md:text-6xl text-right w-max mr-auto py-6 md:pl-8 pr-4 bg-clip-text font-extrabold md:bg-transparent`}
+              onClick={() => setIsOpen(false)}
+            >
+              PROJECTS
+            </Link>
+          </li>
+        </ul>
+        {/* <div className="fixed bg-slate-50/10 h-screen right-0 top-0 w-1/2"></div> */}
       </div>
     </nav>
   );
