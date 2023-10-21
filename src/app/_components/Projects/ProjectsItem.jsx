@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const ProjectsItem = () => {
   return (
-    <div>
+    <>
       {Projects.map((item) => (
         <motion.div
           initial={{ y: 30, opacity: 0 }}
@@ -22,9 +22,9 @@ const ProjectsItem = () => {
             alt={item.title}
             width={300}
             height={200}
-            className="shadow-lg mb-6 aspect-video object-cover"
+            className="shadow-lg mb-6 aspect-video object-cover "
           />
-          <div className="md:px-6 md:w-2/3">
+          <div className="md:px-6 md:w-2/3 ">
             <p className=" text-lg md:text-xl text-justify font-bold pb-2">
               {item.title}
             </p>
@@ -62,7 +62,7 @@ const ProjectsItem = () => {
           </div>
         </motion.div>
       ))}
-    </div>
+    </>
   );
 };
 

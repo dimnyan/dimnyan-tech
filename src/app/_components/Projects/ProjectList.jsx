@@ -14,7 +14,9 @@ function ProjectList() {
         className="max-w-screen-xl flex flex-col"
         style={{ color: "#ECECF9" }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-10 ">Projects</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-10 ml-8">
+          Projects
+        </h1>
         <div className="md:flex md:flex-col">
           <ProjectsItem />
         </div>

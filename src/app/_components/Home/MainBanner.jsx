@@ -6,6 +6,7 @@ import {
   faJs,
   faHtml5,
   faUbuntu,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,22 +36,35 @@ const MainBanner = () => {
         <p className=" text-lg md:text-lg text-left py-2">
           Creating stunning web solutions using the power of React.
         </p>
-        <div className="py-5 flex justify-between w-40">
+        <div className="py-5 flex gap-6">
           <FontAwesomeIcon
             icon={faReact}
             style={{ color: "#06b6d4" }}
             size="xl"
           />
-          <FontAwesomeIcon icon={faJs} size="xl" style={{ color: "#F0DB4F" }} />
-          <FontAwesomeIcon
-            icon={faHtml5}
-            size="xl"
-            style={{ color: "#f06529" }}
+          <Image
+            src={"/images/tailwind-css.png"}
+            alt="tailwind"
+            width={30}
+            height={15}
+            className="my-1"
           />
+          <Image
+            src={"/images/nextjs.png"}
+            alt="nextjs"
+            width={24}
+            height={15}
+          />
+          <FontAwesomeIcon icon={faJs} size="xl" style={{ color: "#F0DB4F" }} />
           <FontAwesomeIcon
             icon={faUbuntu}
             size="xl"
             style={{ color: "#ffa600" }}
+          />
+          <FontAwesomeIcon
+            icon={faGithub}
+            size="xl"
+            style={{ color: "#efefef" }}
           />
         </div>
         <Link
