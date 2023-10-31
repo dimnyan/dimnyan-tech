@@ -62,6 +62,9 @@ const Navbar = () => {
   return (
     <nav className="border-gray-200 bg-gray-900 sticky top-0 z-10" ref={scope}>
       <motion.div
+        initial={{ y: 15, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, delay: 1 }}
         // style={{ scale: scaler }}
         className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-10"
       >
@@ -100,7 +103,10 @@ const Navbar = () => {
           </svg> */}
         </button>
       </motion.div>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.1, delay: 1 }}
         className={`${
           isOpen ? "fixed" : "fixed hidden"
         } top-0 left-0 md:block w-2/3 z-10`}
@@ -135,7 +141,7 @@ const Navbar = () => {
           </li>
         </ul>
         {/* <div className="fixed bg-slate-50/10 h-screen right-0 top-0 w-1/2"></div> */}
-      </div>
+      </motion.div>
     </nav>
   );
 };

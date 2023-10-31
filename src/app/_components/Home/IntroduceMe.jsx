@@ -20,7 +20,11 @@ function IntroduceMe() {
   ];
 
   return (
-    <div className=" bg-gradient-to-br from-green-100 to-green-300 text-white pt-10 md:py-20">
+    <div
+      id="scroll"
+      // className=" bg-gradient-to-br from-green-100 to-green-300 text-white pt-10 md:py-20"
+      className="bg-gradient-to-br from-slate-700 to-slate-950 text-black pt-10 md:py-20"
+    >
       <div
 
       // className="md:flex"
@@ -33,11 +37,11 @@ function IntroduceMe() {
           }}
           className="max-w-screen-lg mx-auto md:w-max"
         >
-          <p className="text-lg lg:text-2xl px-6 pt-6 pb-3 text-black tracking-wider">
+          <p className="text-lg lg:text-2xl px-6 pt-6 pb-3 text-white tracking-wider">
             Hi, There! I&apos;m Nyoman Lanang A.K.A Dimas.
             <br />
           </p>
-          <p className="text-sm px-6 text-cyan-950">
+          <p className="text-sm px-6 text-slate-200">
             Indonesian ReactJS Engineer
           </p>
           {/* <h2 className="text-3xl md:text-4xl font-bold mb-3 px-6 py-10 text-black tracking-tight">

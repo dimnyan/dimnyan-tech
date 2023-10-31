@@ -1,6 +1,18 @@
 const Projects = [
   {
-    title: "F1 Standings Tracker - ReactJS API",
+    title: "HR Asesor Data Management System - MERN",
+    description:
+      "In this project, I developed a full-stack web application using the MERN (MongoDB, Express.js, React, and Node.js) stack to create, read, update, and delete (CRUD) asesor data for my company's HR department. This system will provide a user-friendly interface for HR professionals to manage the information of asesors within the organization efficiently.",
+    imageUrl: "/images/hrasesor-thumbnail.png",
+  },
+  {
+    title: "Exam Admin Dashboard - ReactJS",
+    description:
+      "This application aims to empower company administrators with the tools they need to monitor and ensure the completeness of essential documents while the exam is going.",
+    imageUrl: "/images/adminApp-thumbnail.jpg",
+  },
+  {
+    title: "F1 Standings Tracker - ReactJS & PublicAPI",
     description:
       'The "F1 Standings Tracker" is a web frontend project built using ReactJS that allows Formula 1 enthusiasts to stay updated with the latest drivers standings in the F1 racing season. This dynamic and user-friendly application fetches data from an API source to provide real-time information about the current standings of F1 drivers, their points, and their team affiliations.',
     livePageLink: "https://f1.dimnyan.tech/",
@@ -8,12 +20,7 @@ const Projects = [
 
     imageUrl: "/images/f1-thumbnail.png",
   },
-  {
-    title: "Exam Admin Dashboard for Document Monitoring - ReactJS",
-    description:
-      "This application aims to empower company administrators with the tools they need to monitor and ensure the completeness of essential documents while the exam is going.",
-    imageUrl: "/images/adminApp-thumbnail.jpg",
-  },
+
   {
     title: "Personal Landing Page - NextJS & TailwindCSS / Vercel",
     description:

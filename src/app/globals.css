@@ -13,3 +13,7 @@
 .bg-img-contact-banner {
   background-image: url(/images/contact-bg.webp);
 }
+
+body {
+  scroll-behavior: smooth;
+}

@@ -11,8 +11,8 @@ export default function Home() {
     <>
       <Navbar />
       <MainBanner />
-      <IntroduceMe />
       <FeaturedProject />
+      <IntroduceMe />
       <ToProjects />
       <Footer />
     </>
