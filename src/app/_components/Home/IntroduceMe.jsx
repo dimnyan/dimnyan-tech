@@ -21,7 +21,6 @@ function IntroduceMe() {
 
   return (
     <div
-      id="scroll"
       // className=" bg-gradient-to-br from-green-100 to-green-300 text-white pt-10 md:py-20"
       className="bg-gradient-to-br from-slate-700 to-slate-950 text-black pt-10 md:py-20"
     >
