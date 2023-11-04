@@ -15,7 +15,7 @@ const MainBanner = () => {
   return (
     <div
       style={{ color: "#ECECF9" }}
-      className="bg-gradient-to-br from-gray-800 to-gray-900 pt-20 pb-12 md:flex px-12 md:px-24 md:py-40"
+      className="bg-gradient-to-br from-gray-800 to-gray-900 pt-32 pb-12 md:flex px-12 md:px-24 md:py-52"
     >
       <div
         // initial={{ y: 30, opacity: 0 }}

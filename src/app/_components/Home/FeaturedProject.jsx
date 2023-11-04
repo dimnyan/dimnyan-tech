@@ -11,7 +11,7 @@ const FeaturedProject = () => {
   return (
     <div
       id="scroll"
-      className=" bg-gradient-to-br from-green-100 to-green-300 text-black pt-10 md:py-20"
+      className=" bg-gradient-to-br from-green-100 to-green-300 text-black pt-10 md:py-44"
 
       // className="bg-gradient-to-br from-slate-700 to-slate-950 text-black py-10 md:flex md:py-20 pt-20 pb-12 px-12 md:p-12"
     >

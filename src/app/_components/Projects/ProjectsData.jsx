@@ -2,7 +2,7 @@ const Projects = [
   {
     title: "HR Asesor Data Management System - MERN",
     description:
-      "In this project, I developed a full-stack web application using the MERN (MongoDB, Express.js, React, and Node.js) stack to create, read, update, and delete (CRUD) asesor data for my company's HR department. This system will provide a user-friendly interface for HR professionals to manage the information of asesors within the organization efficiently.",
+      "In this project, I developed a full-stack web application using the MERN (MongoDB, Express.js, React, and Node.js) stack to create, read, update, and delete (CRUD) asesor data for my company's HR department,  with stats and filters to make the system user-friendly for HR professionals to manage the information of asesors within the organization efficiently.",
     imageUrl: "/images/asesor-thumbnail.png",
   },
   {
