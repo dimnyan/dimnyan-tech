@@ -11,9 +11,9 @@ export default function Home() {
     <>
       <Navbar />
       <MainBanner />
-      <div className="md:flex">
-        <FeaturedProject />
+      <div className="lg:flex gap-24 bg-gradient-to-br from-slate-700 to-slate-950 px-12 md:px-24">
         <IntroduceMe />
+        <FeaturedProject />
       </div>
       <ToProjects />
       <Footer />

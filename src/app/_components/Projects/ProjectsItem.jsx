@@ -29,7 +29,7 @@ const ProjectsItem = () => {
               {item.title}
             </p>
 
-            <p className="text-slate-400 text-sm md:text-justify  ">
+            <p className="text-slate-400 text-sm md:text-justify line-clamp-3 ">
               {item.description}
             </p>
             {item.sourceCodeLink ? (

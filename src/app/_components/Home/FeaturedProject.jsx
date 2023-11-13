@@ -12,17 +12,17 @@ const FeaturedProject = () => {
     <div
       id="scroll"
       // className=" bg-gradient-to-br from-green-100 to-green-300 text-black pt-10 md:py-44"
-      className="md:w-2/3 bg-gradient-to-br from-gray-800 to-gray-900 text-black pt-10 md:py-32"
+      className="lg:w-2/3 text-black pt-10 lg:py-32"
     >
       <motion.div
-        initial={{ x: -30, opacity: 0 }}
+        initial={{ x: 30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="max-w-screen-xl flex flex-col px-10"
+        className="max-w-screen-xl flex flex-col"
         style={{ color: "#ECECF9" }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold md:mb-10 text-slate-200">
-          Featured Project
+        <h1 className="my-5 text-4xl md:text-5xl font-extrabold md:mb-10 text-slate-200">
+          Featured Projects
         </h1>
         <div className="py-10 text-slate-300 flex flex-col gap-8">
           <motion.div
@@ -39,10 +39,12 @@ const FeaturedProject = () => {
               className="shadow-lg mb-8 relative align-center"
             />
             <div>
-              <h3 className="text-lg lg:text-xl font-bold pb-5">
+              <h3 className="text-lg lg:text-xl font-bold mb-5 line-clamp-2">
                 {firstProject.title}
               </h3>
-              <p>{firstProject.description}</p>
+              <p className="text-slate-400 line-clamp-4">
+                {firstProject.description}
+              </p>
             </div>
           </motion.div>
           <motion.div
@@ -59,10 +61,12 @@ const FeaturedProject = () => {
               className="shadow-lg mb-8 relative align-center"
             />
             <div>
-              <h3 className="text-lg lg:text-xl font-bold pb-5">
+              <h3 className="text-lg lg:text-xl font-bold mb-5 line-clamp-2">
                 {secondProject.title}
               </h3>
-              <p>{secondProject.description}</p>
+              <p className="text-slate-400 line-clamp-4">
+                {secondProject.description}
+              </p>
             </div>
           </motion.div>
           <motion.div
@@ -79,10 +83,12 @@ const FeaturedProject = () => {
               className="shadow-lg mb-8 relative align-center"
             />
             <div>
-              <h3 className="text-lg lg:text-xl font-bold pb-5">
+              <h3 className="text-lg lg:text-xl font-bold mb-5 line-clamp-2">
                 {thirdProject.title}
               </h3>
-              <p>{thirdProject.description}</p>
+              <p className="text-slate-400 line-clamp-4">
+                {thirdProject.description}
+              </p>
             </div>
           </motion.div>
 

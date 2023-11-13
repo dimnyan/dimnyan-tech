@@ -83,7 +83,7 @@ const Navbar = () => {
           // aria-expanded={isOpen ? "true" : "false"}
         >
           <p className="bg-clip-text text-transparent text-lg tracking-wider bg-gradient-to-br from-green-500 to-blue-500 font-extrabold">
-            MENU
+            {isOpen ? "CLOSE" : "MENU"}
           </p>
           {/* <span className="sr-only">Open main menu</span>
           <svg
