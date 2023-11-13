@@ -11,8 +11,10 @@ export default function Home() {
     <>
       <Navbar />
       <MainBanner />
-      <FeaturedProject />
-      <IntroduceMe />
+      <div className="md:flex">
+        <FeaturedProject />
+        <IntroduceMe />
+      </div>
       <ToProjects />
       <Footer />
     </>

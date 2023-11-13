@@ -11,73 +11,79 @@ const FeaturedProject = () => {
   return (
     <div
       id="scroll"
-      className=" bg-gradient-to-br from-green-100 to-green-300 text-black pt-10 md:py-44"
-
-      // className="bg-gradient-to-br from-slate-700 to-slate-950 text-black py-10 md:flex md:py-20 pt-20 pb-12 px-12 md:p-12"
+      // className=" bg-gradient-to-br from-green-100 to-green-300 text-black pt-10 md:py-44"
+      className="md:w-2/3 bg-gradient-to-br from-gray-800 to-gray-900 text-black pt-10 md:py-32"
     >
       <motion.div
         initial={{ x: -30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="max-w-screen-xl flex flex-col mx-auto px-10"
+        className="max-w-screen-xl flex flex-col px-10"
         style={{ color: "#ECECF9" }}
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold md:mb-10 md:text-center text-black">
+        <h1 className="text-4xl md:text-5xl font-extrabold md:mb-10 text-slate-200">
           Featured Project
         </h1>
-        <div className="md:grid md:grid-cols-3 md:gap-10 py-10 md:justify-around text-black">
+        <div className="py-10 text-slate-300 flex flex-col gap-8">
           <motion.div
-            initial={{ x: -30, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            // className="flex items-center bg-white"
+            // initial={{ x: -30, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // transition={{ duration: 0.5 }}
+            className="md:flex align-center gap-5 my-5"
           >
             <Image
               src={firstProject.imageUrl}
               alt={firstProject.title}
-              width={500}
-              height={300}
-              className="shadow-lg m-auto mb-8"
+              width={300}
+              height={200}
+              className="shadow-lg mb-8 relative align-center"
             />
-            <p className="text-lg lg:text-xl text-center font-bold pb-5">
-              {firstProject.title}
-            </p>
+            <div>
+              <h3 className="text-lg lg:text-xl font-bold pb-5">
+                {firstProject.title}
+              </h3>
+              <p>{firstProject.description}</p>
+            </div>
           </motion.div>
           <motion.div
-            initial={{ x: -30, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-            // className="flex items-center bg-white"
+            // initial={{ x: -30, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // transition={{ duration: 0.5, delay: 0.5 }}
+            className="md:flex align-center gap-5 my-5"
           >
             <Image
               src={secondProject.imageUrl}
               alt={secondProject.title}
-              width={500}
-              height={300}
-              className="shadow-lg m-auto mb-8"
+              width={300}
+              height={200}
+              className="shadow-lg mb-8 relative align-center"
             />
-            <p className="text-lg lg:text-xl text-center font-bold pb-5">
-              {secondProject.title}
-            </p>
+            <div>
+              <h3 className="text-lg lg:text-xl font-bold pb-5">
+                {secondProject.title}
+              </h3>
+              <p>{secondProject.description}</p>
+            </div>
           </motion.div>
           <motion.div
-            initial={{ x: -30, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.2 }}
-            // className="flex items-center bg-white"
+            // initial={{ x: -30, opacity: 0 }}
+            // whileInView={{ x: 0, opacity: 1 }}
+            // transition={{ duration: 0.5, delay: 1.0 }}
+            className="md:flex align-center gap-5 my-5"
           >
-            <motion.div whileHover={{ scale: 1.05, borderRadius: "20%" }}>
-              <Image
-                src={thirdProject.imageUrl}
-                alt={thirdProject.title}
-                width={500}
-                height={300}
-                className="shadow-lg m-auto mb-8"
-              />
-            </motion.div>
-            <p className="text-lg lg:text-xl text-center font-bold pb-5">
-              {thirdProject.title}
-            </p>
+            <Image
+              src={thirdProject.imageUrl}
+              alt={thirdProject.title}
+              width={300}
+              height={200}
+              className="shadow-lg mb-8 relative align-center"
+            />
+            <div>
+              <h3 className="text-lg lg:text-xl font-bold pb-5">
+                {thirdProject.title}
+              </h3>
+              <p>{thirdProject.description}</p>
+            </div>
           </motion.div>
 
           {/*           

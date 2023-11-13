@@ -69,7 +69,7 @@ const Navbar = () => {
         className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-10"
       >
         <Link className="flex items-center" href="/">
-          <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-br from-white to-slate-200">
+          <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-br from-slate-200 to-slate-300">
             dimnyan
           </span>
         </Link>

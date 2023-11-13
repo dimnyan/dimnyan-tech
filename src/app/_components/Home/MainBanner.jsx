@@ -15,7 +15,7 @@ const MainBanner = () => {
   return (
     <div
       style={{ color: "#ECECF9" }}
-      className="bg-gradient-to-br from-gray-800 to-gray-900 pt-32 pb-12 md:flex px-12 md:px-24 md:py-52"
+      className="bg-gradient-to-br from-gray-900 to-gray-900 pt-32 pb-12 md:flex px-12 md:px-24 md:py-52"
     >
       <div
         // initial={{ y: 30, opacity: 0 }}
@@ -29,7 +29,7 @@ const MainBanner = () => {
           initial={{ y: 15, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7 }}
-          className="text-4xl md:text-5xl font-extrabold mb-4 "
+          className="text-4xl md:text-5xl font-extrabold mb-4 text-slate-300"
         >
           Bringing Ideas to Life on the
           <font className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">
@@ -45,7 +45,7 @@ const MainBanner = () => {
             delay: 1,
           }}
         >
-          <p className=" text-lg md:text-lg text-left py-2">
+          <p className="text-slate-400 text-lg md:text-lg text-left py-2">
             Creating stunning web solutions using the power of React.
           </p>
           <div className="py-5 flex gap-6">
