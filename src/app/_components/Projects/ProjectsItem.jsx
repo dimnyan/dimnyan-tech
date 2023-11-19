@@ -19,7 +19,12 @@ const ProjectsItem = () => {
             height={400}
             className="shadow-lg relative align-center hidden md:block"
           />
-          <h3 className="text-xl font-bold line-clamp-2">{item.title}</h3>
+          <Link
+            href={`/projects/${item.title}`}
+            className="text-xl font-bold line-clamp-2 hover:text-orange-500"
+          >
+            {item.title}
+          </Link>
           <p className="text-slate-400 line-clamp-4">{item.description}</p>
           <Link
             href={`/projects/${item.title}`}

@@ -44,7 +44,7 @@ function Footer() {
               href="https://www.linkedin.com/in/nyomanlanang"
               target="_blank"
               rel="noopener noreferrer"
-              className=" text-gray-400 hover:text-blue-400 mr-7 mt-3"
+              className=" text-gray-400 hover:text-orange-500 mr-7 mt-3"
             >
               <FontAwesomeIcon icon={faLinkedin} size="2xl" />
             </Link>
@@ -52,7 +52,7 @@ function Footer() {
               href="https://www.github.com/dimnyan"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 mr-7 mt-3"
+              className="text-gray-400 hover:text-orange-500 mr-7 mt-3"
             >
               <FontAwesomeIcon icon={faGithub} size="2xl" />
             </Link>
@@ -60,7 +60,7 @@ function Footer() {
               href="https://www.twitter.com/dimnyomm"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 mr-7 mt-3"
+              className="text-gray-400 hover:text-orange-500 mr-7 mt-3"
             >
               <FontAwesomeIcon icon={faXTwitter} size="2xl" />
             </Link>
@@ -68,7 +68,7 @@ function Footer() {
               href="https://www.instagram.com/dimnyan"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 mt-3"
+              className="text-gray-400 hover:text-orange-500 mt-3"
             >
               <FontAwesomeIcon icon={faInstagram} size="2xl" />
             </Link>

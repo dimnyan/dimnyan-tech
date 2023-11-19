@@ -9,9 +9,9 @@ export async function generateMetadata({ params }) {
   const decodedSlug = router.slug.replace(/%20/g, " ");
 
   const found = Projects.find((project) => project.title.includes(decodedSlug));
-
+  const titleNew = "dimnyan | " + found.title;
   return {
-    title: found.title,
+    title: titleNew,
     description: found.description,
     image: found.imageUrl,
   };

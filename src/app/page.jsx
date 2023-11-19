@@ -14,7 +14,7 @@ export default function Home() {
       <IntroduceMe />
       <FeaturedProject />
       {/* </div> */}
-      <ToProjects />
+      {/* <ToProjects /> */}
     </>
   );
 }
