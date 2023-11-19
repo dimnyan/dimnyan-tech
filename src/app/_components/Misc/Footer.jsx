@@ -9,23 +9,37 @@ import {
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-white pb-3 pt-20">
-      <div className="max-w-screen-xl mx-auto px-10 mb-10 md:flex text-center md:justify-center md:gap-20">
-        <div className="pb-10 ">
-          <h2 className="text-md  font-bold pb-5">Contacts</h2>
+    <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-white pb-3 pt-20 px-12 md:px-24">
+      <div className="max-w-screen-xl mx-auto mb-10 md:grid md:grid-cols-2">
+        <div className="pb-10 text-slate-300">
+          <h2 className="font-bold lg:text-left">
+            Your business needs a Website?
+          </h2>
+          <p className="pb-5">Feel free to contact me!</p>
+
+          <Link
+            href="mailto:dimas@dimnyan.tech"
+            target="_blank"
+            className="font-bold text-slate-300 hover:text-orange-500 border-b border-b-orange-500 pb-1 w-fit"
+          >
+            dimas@dimnyan.tech
+          </Link>
+        </div>
+        {/* <div className="pb-10 ">
+          <h2 className="md:text-xl font-bold pb-5">Contacts</h2>
           <div className="mb-2 flex items-center">
             <Link
               href="mailto:dimas@dimnyan.tech"
               target="_blank"
-              className="hover:text-blue-400 text-gray-300 m-auto mt-4"
+              className="font-bold text-slate-200 hover:text-orange-500 border-b border-b-orange-500 pb-1 w-fit"
             >
               dimas@dimnyan.tech
             </Link>
           </div>
-        </div>
+        </div> */}
         <div>
-          <h2 className="text-md font-bold pb-5">Socials</h2>
-          <div className="mb-20 flex justify-center items-center m-auto">
+          <h2 className="text-2xl font-bold pb-5">Socials</h2>
+          <div className="mb-20 flex items-center">
             <Link
               href="https://www.linkedin.com/in/nyomanlanang"
               target="_blank"

@@ -20,7 +20,7 @@ function ContactMe() {
         <Link
           href="mailto:dimas@dimnyan.tech"
           target="_blank"
-          className=" bg-gradient-to-br from-cyan-300 to-cyan-500 w-max text-black px-6 mt-6 py-3 text-md font-semibold rounded-full hover:bg-blue-100 transition duration-300"
+          className="bg-gradient-to-br from-orange-300 to-orange-600 w-max text-black px-6 mt-6 py-3 text-md font-semibold rounded-full hover:bg-blue-100 transition duration-300"
         >
           Contact Me
         </Link>

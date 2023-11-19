@@ -8,11 +8,9 @@ import ProjectList from "@/app/_components/Projects/ProjectList";
 function Projects() {
   return (
     <div className="bg-black" style={{ color: "#ECECF9" }}>
-      <Navbar />
-      <ProjectBanner />
+      {/* <ProjectBanner /> */}
       <ProjectList />
-      <ContactMe />
-      <Footer />
+      {/* <ContactMe /> */}
     </div>
   );
 }

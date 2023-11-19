@@ -4,95 +4,49 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const FeaturedProject = () => {
-  const firstProject = Projects[0];
-  const secondProject = Projects[1];
-  const thirdProject = Projects[2];
+  const topProjects = Projects.slice(0, 3);
 
   return (
     <div
-      id="scroll"
-      // className=" bg-gradient-to-br from-green-100 to-green-300 text-black pt-10 md:py-44"
-      className="lg:w-2/3 text-black pt-10 lg:py-32"
+      className="bg-slate-900 text-black px-12 pt-10 pb-20 min-h-screen md:px-24 flex align-middle"
+      // className="lg:w-2/3 text-black pt-10 lg:py-32"
     >
       <motion.div
-        initial={{ x: 30, opacity: 0 }}
+        initial={{ x: -30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="max-w-screen-xl flex flex-col"
+        transition={{ duration: 0.8 }}
+        className="m-auto"
         style={{ color: "#ECECF9" }}
       >
-        <h1 className="my-5 text-4xl md:text-5xl font-extrabold md:mb-10 text-slate-200">
+        <h1 className="py-10 text-4xl md:text-5xl font-extrabold md:mb-10 tracking-wider text-slate-200 xl:text-center">
           Featured Projects
         </h1>
-        <div className="py-10 text-slate-300 flex flex-col gap-8">
-          <motion.div
-            // initial={{ x: -30, opacity: 0 }}
-            // whileInView={{ x: 0, opacity: 1 }}
-            // transition={{ duration: 0.5 }}
-            className="md:flex align-center gap-5 my-5"
-          >
-            <Image
-              src={firstProject.imageUrl}
-              alt={firstProject.title}
-              width={300}
-              height={200}
-              className="shadow-lg mb-8 relative align-center"
-            />
-            <div>
-              <h3 className="text-lg lg:text-xl font-bold mb-5 line-clamp-2">
-                {firstProject.title}
-              </h3>
-              <p className="text-slate-400 line-clamp-4">
-                {firstProject.description}
-              </p>
-            </div>
-          </motion.div>
-          <motion.div
-            // initial={{ x: -30, opacity: 0 }}
-            // whileInView={{ x: 0, opacity: 1 }}
-            // transition={{ duration: 0.5, delay: 0.5 }}
-            className="md:flex align-center gap-5 my-5"
-          >
-            <Image
-              src={secondProject.imageUrl}
-              alt={secondProject.title}
-              width={300}
-              height={200}
-              className="shadow-lg mb-8 relative align-center"
-            />
-            <div>
-              <h3 className="text-lg lg:text-xl font-bold mb-5 line-clamp-2">
-                {secondProject.title}
-              </h3>
-              <p className="text-slate-400 line-clamp-4">
-                {secondProject.description}
-              </p>
-            </div>
-          </motion.div>
-          <motion.div
-            // initial={{ x: -30, opacity: 0 }}
-            // whileInView={{ x: 0, opacity: 1 }}
-            // transition={{ duration: 0.5, delay: 1.0 }}
-            className="md:flex align-center gap-5 my-5"
-          >
-            <Image
-              src={thirdProject.imageUrl}
-              alt={thirdProject.title}
-              width={300}
-              height={200}
-              className="shadow-lg mb-8 relative align-center"
-            />
-            <div>
-              <h3 className="text-lg lg:text-xl font-bold mb-5 line-clamp-2">
-                {thirdProject.title}
-              </h3>
-              <p className="text-slate-400 line-clamp-4">
-                {thirdProject.description}
-              </p>
-            </div>
-          </motion.div>
+        <ul className="grid grid-cols-1 flex-1 gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-9">
+          {topProjects.map((item, index) => (
+            <li
+              className="bg-slate-800 p-3 rounded-md flex flex-col justify-between gap-5 lg:max-w-sm mx-auto"
+              key={index}
+            >
+              <Image
+                src={item.imageUrl}
+                alt={item.title}
+                width={400}
+                height={400}
+                className="shadow-lg relative align-center hidden md:block"
+              />
+              <h3 className="text-xl font-bold line-clamp-2">{item.title}</h3>
+              <p className="text-slate-400 line-clamp-4">{item.description}</p>
+              <Link
+                href="/projects"
+                className="font-bold text-slate-200 hover:text-orange-500 border-b border-b-orange-500 pb-1 w-fit"
+              >
+                See Projects
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-          {/*           
+        {/*           
             {recentProject.sourceCodeLink ? (
               <button className=" bg-gradient-to-br from-blue-100 to-blue-300 w-max mr-5 text-black px-5 mt-3 py-2 text-sm font-semibold rounded-full hover:bg-blue-100 transition duration-300">
                 <Link href={recentProject.sourceCodeLink} target="_blank">
@@ -120,7 +74,6 @@ const FeaturedProject = () => {
                 </Link>
               </button>
             )} */}
-        </div>
       </motion.div>
     </div>
   );

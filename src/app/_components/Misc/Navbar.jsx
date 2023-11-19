@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion, scroll, stagger, useAnimate, useScroll } from "framer-motion";
+import Image from "next/image";
 
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
@@ -42,6 +43,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const pathname = usePathname();
   const scope = useMenuAnimation(isOpen);
+
+  const menus = [
+    { name: "home", path: "/" },
+    { name: "projects", path: "/projects" },
+  ];
   // const [scaler, setScaler] = useState(1);
 
   // const { scrollYProgress } = useScroll();
@@ -60,16 +66,27 @@ const Navbar = () => {
   //scale 1 - 0.7
 
   return (
-    <nav className="border-gray-200 bg-gray-900 sticky top-0 z-10" ref={scope}>
+    <nav
+      className="border-gray-200 bg-gray-900 sticky top-0 z-10 px-5 md:px-24"
+      ref={scope}
+    >
       <motion.div
         initial={{ y: 15, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 1 }}
         // style={{ scale: scaler }}
-        className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-10"
+        className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4"
       >
-        <Link className="flex items-center" href="/">
-          <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-br from-slate-200 to-slate-300">
+        <Link className="flex items-center gap-4" href="/">
+          <Image
+            src="/images/my-icon.png"
+            width={20}
+            height={20}
+            alt="Dimas Nyoman Profile Pict"
+            className="mx-auto w-full md:w-auto"
+            priority="true"
+          />
+          <span className="bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-blue-400 self-center text-xl md:text-2xl font-bold whitespace-nowrap">
             dimnyan
           </span>
         </Link>
@@ -82,9 +99,9 @@ const Navbar = () => {
           "
           // aria-expanded={isOpen ? "true" : "false"}
         >
-          <p className="bg-clip-text text-transparent text-lg tracking-wider bg-gradient-to-br from-green-500 to-blue-500 font-extrabold">
+          <span className="bg-clip-text text-transparent bg-gradient-to-br from-orange-300 to-orange-600 text-lg tracking-wider font-extrabold">
             {isOpen ? "CLOSE" : "MENU"}
-          </p>
+          </span>
           {/* <span className="sr-only">Open main menu</span>
           <svg
             className="w-5 h-5"
@@ -113,32 +130,21 @@ const Navbar = () => {
         id="nav-box"
       >
         <ul className="font-medium h-screen py-16 pl-6 md:pl-10 border-r border-yellow-600 rounded-lg w-full bg-gray-900 dark:border-gray-900">
-          <li>
-            <Link
-              href="/"
-              className={` ${
-                pathname === "/"
-                  ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500 "
-                  : "text-transparent bg-gradient-to-br from-white to-slate-200"
-              } block text-3xl md:text-6xl text-right w-max mr-auto py-6 md:pl-8 pr-4 bg-clip-text font-extrabold md:bg-transparent `}
-              onClick={() => setIsOpen(false)}
-            >
-              HOME
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/projects"
-              className={` ${
-                pathname === "/projects"
-                  ? "text-transparent bg-gradient-to-br from-green-500 to-blue-500"
-                  : "text-transparent bg-gradient-to-br from-white to-slate-200"
-              } block text-3xl md:text-6xl text-right w-max mr-auto py-6 md:pl-8 pr-4 bg-clip-text font-extrabold md:bg-transparent`}
-              onClick={() => setIsOpen(false)}
-            >
-              PROJECTS
-            </Link>
-          </li>
+          {menus.map((item) => (
+            <li key={item.name}>
+              <Link
+                href={`${item.path}`}
+                className={` ${
+                  pathname === item.path
+                    ? "text-transparent bg-gradient-to-br from-orange-300 to-orange-500 border-b border-orange-400"
+                    : "text-transparent bg-gradient-to-br from-white to-slate-200"
+                } block text-3xl md:text-6xl text-right w-max mr-auto py-4 md:py-6 md:ml-8 bg-clip-text font-extrabold md:bg-transparent uppercase`}
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
         </ul>
         {/* <div className="fixed bg-slate-50/10 h-screen right-0 top-0 w-1/2"></div> */}
       </motion.div>

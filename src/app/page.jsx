@@ -9,14 +9,12 @@ import FeaturedProject from "./_components/Home/FeaturedProject";
 export default function Home() {
   return (
     <>
-      <Navbar />
       <MainBanner />
-      <div className="lg:flex gap-24 bg-gradient-to-br from-slate-700 to-slate-950 px-12 md:px-24">
-        <IntroduceMe />
-        <FeaturedProject />
-      </div>
+      {/* <div className="lg:flex gap-24 bg-gradient-to-br from-slate-700 to-slate-950 px-12 md:px-24"> */}
+      <IntroduceMe />
+      <FeaturedProject />
+      {/* </div> */}
       <ToProjects />
-      <Footer />
     </>
   );
 }

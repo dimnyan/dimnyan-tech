@@ -12,7 +12,7 @@ function ProjectBanner() {
         }}
         className="max-w-screen-xl mx-auto flex flex-col items-center"
       >
-        <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-center ">
+        <h1 className="tracking-wider text-4xl md:text-5xl font-extrabold mb-4 text-center ">
           Crafting Digital Experiences
         </h1>
         <p className=" md:text-lg py-2 text-center">
