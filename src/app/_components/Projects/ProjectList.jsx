@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function ProjectList() {
   return (
-    <div className="bg-gradient-to-br from-slate-700 to-slate-950 text-black py-10 md:flex md:pb-40 md:pt-22 pt-20 pb-12 px-12 md:py-12 md:px-24">
+    <div className="bg-gradient-to-br from-slate-700 to-slate-950 text-black py-10 md:flex md:pb-40 md:pt-22 pt-20 pb-12 px-12 md:py-12 md:px-24 md:justify-center">
       <motion.div
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 1, opacity: 1 }}
