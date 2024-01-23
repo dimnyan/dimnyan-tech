@@ -12,8 +12,6 @@ const useMenuAnimation = (isOpen) => {
   const [scope, animate] = useAnimate();
   // const mobileNavBox = document.getElementById("nav-box");
   useEffect(() => {
-    // scroll((progress) => console.log(progress));
-
     animate(
       "#nav-box",
       // mobileNavBox,
