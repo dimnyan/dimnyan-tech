@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import ProjectsItem from "./ProjectsItem";
-import Link from "next/link";
+// import Link from "next/link";
 
 function ProjectList() {
   return (

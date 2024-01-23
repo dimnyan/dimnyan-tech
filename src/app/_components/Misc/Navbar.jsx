@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { motion, scroll, stagger, useAnimate, useScroll } from "framer-motion";
+import { motion, stagger, useAnimate } from "framer-motion";
 import Image from "next/image";
 
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
@@ -40,7 +40,7 @@ const useMenuAnimation = (isOpen) => {
 };
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const scope = useMenuAnimation(isOpen);
 

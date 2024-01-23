@@ -3,7 +3,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
-  faJs,
   faUbuntu,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
