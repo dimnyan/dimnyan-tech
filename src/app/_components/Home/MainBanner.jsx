@@ -8,14 +8,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export async function generateMetadata() {
-  return {
-    title: "Home | dimnyan",
-    description:
-      "Nyoman Lanang Kresna | Indonesian Front-End IT Web Developer specialized in NextJS / ReactJS",
-    image: "/images/my-icon.png",
-  };
-}
+// export async function generateMetadata() {
+//   return {
+//     title: "Home | dimnyan",
+//     description:
+//       "Nyoman Lanang Kresna | Indonesian Front-End IT Web Developer specialized in NextJS / ReactJS",
+//     image: "/images/my-icon.png",
+//   };
+// }
+
+export const metadata = {
+  title: "Home | dimnyan",
+  description:
+    "Nyoman Lanang Kresna | Indonesian Front-End IT Web Developer specialized in NextJS / ReactJS",
+  image: "/images/my-icon.png",
+};
 
 const MainBanner = () => {
   return (
