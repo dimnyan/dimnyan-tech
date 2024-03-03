@@ -14,7 +14,8 @@ import ProjectList from "@/app/_components/Projects/ProjectList";
 function Projects() {
   return (
     <>
-      <div className="bg-black" style={{ color: "#ECECF9" }}>
+      {/* <div className="bg-black" style={{ color: "#ECECF9" }}> */}
+      <div>
         {/* <ProjectBanner /> */}
         <ProjectList />
         {/* <ContactMe /> */}
