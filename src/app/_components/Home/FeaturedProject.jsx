@@ -21,7 +21,7 @@ const FeaturedProject = () => {
         className="m-auto"
         style={{ color: "#ECECF9" }}
       >
-        <h1 className="py-10 text-4xl md:text-5xl font-extrabold md:mb-10 tracking-wider text-slate-200 xl:text-center">
+        <h1 className="sticky py-10 text-4xl md:text-5xl font-extrabold md:mb-10 tracking-wider text-white xl:text-center">
           Featured Projects
         </h1>
 
