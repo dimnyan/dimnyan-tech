@@ -11,8 +11,8 @@ export default function Home() {
       <Analytics />
       <MainBanner />
       {/* <div className="lg:flex gap-24 bg-gradient-to-br from-slate-700 to-slate-950 px-12 md:px-24"> */}
-      <IntroduceMe />
       <FeaturedProject />
+      <IntroduceMe />
       {/* </div> */}
       {/* <ToProjects /> */}
     </>

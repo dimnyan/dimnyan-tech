@@ -71,7 +71,7 @@ const Navbar = () => {
       <motion.div
         initial={{ y: 15, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7, delay: 1 }}
+        transition={{ duration: 0.7, delay: 2 }}
         // style={{ scale: scaler }}
         className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4"
       >
