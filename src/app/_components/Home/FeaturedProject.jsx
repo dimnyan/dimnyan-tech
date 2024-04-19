@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "../ui/3dCard";
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/movingBorder";
+import Link from "next/link";
 
 const FeaturedProject = () => {
   const topProjects = Projects.slice(0, 4);
@@ -98,7 +99,9 @@ const FeaturedProject = () => {
           ))}
         </ul>
         <div className="w-full flex justify-center">
-          <Button className="text-lg">See More Projects</Button>
+          <Button className="text-lg">
+            <Link href="/projects">See More Projects</Link>
+          </Button>
         </div>
       </motion.div>
     </div>
