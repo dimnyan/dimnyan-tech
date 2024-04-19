@@ -71,31 +71,6 @@ const FeaturedProject = () => {
                 </CardBody>
               </CardContainer>
             </li>
-            // <li
-            //   className="bg-slate-800 p-3 rounded-md flex flex-col justify-between gap-5 lg:max-w-sm mx-auto"
-            //   key={index}
-            // >
-            //   <Image
-            //     src={item.imageUrl}
-            //     alt={item.title}
-            //     width={400}
-            //     height={400}
-            //     className="shadow-lg relative align-center hidden md:block"
-            //   />
-            //   <Link
-            //     href={"/projects"}
-            //     className="text-xl font-bold line-clamp-2 hover:text-orange-500"
-            //   >
-            //     {item.title}
-            //   </Link>
-            //   <p className="text-slate-400 line-clamp-4">{item.description}</p>
-            //   <Link
-            //     href="/projects"
-            //     className="font-bold text-slate-200 hover:text-orange-500 border-b border-b-orange-500 pb-1 w-fit"
-            //   >
-            //     See Projects
-            //   </Link>
-            // </li>
           ))}
         </ul>
         <div className="w-full flex justify-center">
