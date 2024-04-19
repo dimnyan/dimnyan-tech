@@ -3,6 +3,7 @@ import Projects from "../Projects/ProjectsData";
 import { motion } from "framer-motion";
 import { CardBody, CardContainer, CardItem } from "../ui/3dCard";
 import { useRouter } from "next/navigation";
+import { Button } from "../ui/movingBorder";
 
 const FeaturedProject = () => {
   const topProjects = Projects.slice(0, 4);
@@ -10,14 +11,15 @@ const FeaturedProject = () => {
 
   return (
     <div
+      id="scroll"
       className="relative bg-dot-white/[0.2] bg-slate-800 text-black px-12 pt-10 pb-20 min-h-screen md:px-24 flex align-middle"
       // className="lg:w-2/3 text-black pt-10 lg:py-32"
     >
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-slate-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <motion.div
-        initial={{ x: -30, opacity: 0 }}
+        initial={{ y: 30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.3 }}
         className="m-auto"
         style={{ color: "#ECECF9" }}
       >
@@ -95,6 +97,9 @@ const FeaturedProject = () => {
             // </li>
           ))}
         </ul>
+        <div className="w-full flex justify-center">
+          <Button className="text-lg">See More Projects</Button>
+        </div>
       </motion.div>
     </div>
   );

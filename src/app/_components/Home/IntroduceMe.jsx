@@ -30,15 +30,14 @@ function IntroduceMe() {
 
   return (
     <div
-      id="scroll"
       className="bg-gray-800 text-white pt-24 pb-10 px-12 md:px-24 md:py-20 w-full"
       // className="py-10 lg:w-1/3 lg:py-36"
     >
       <motion.div
-        initial={{ x: -30, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
         transition={{
-          duration: 0.8,
+          duration: 0.3,
         }}
         className="my-auto"
       >
