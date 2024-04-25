@@ -1,19 +1,34 @@
 import { motion } from "framer-motion";
+import { Separator } from "@/components/ui/separator";
+
+import Image from "next/image";
 // import Link from "next/link";
 
 function IntroduceMe() {
   const techStack = [
-    "ReactJS",
-    "NextJS",
-    "MongoDB",
-    "MySQL",
-    "NodeJS",
-    "ExpressJS",
+    { languageName: "ReactJS", icon: "/images/reactjs.png" },
+    { languageName: "NextJS", icon: "/images/nextjs.png" },
+    {
+      languageName: "MongoDB",
+      icon: "/images/mongodb.png",
+    },
+    {
+      languageName: "ExpressJS",
+      icon: "/images/expressjs.png",
+    },
+    {
+      languageName: "MySQL",
+      icon: "/images/mysql.png",
+    },
+    {
+      languageName: "NodeJS",
+      icon: "/images/nodejs.png",
+    },
   ];
   const experiences = [
     {
-      companyName: "PT. LSP Gatensi Karya Konstruksi",
-      jobTitle: "Front-End Web Engineer",
+      companyName: "LSP Gatensi Karya Konstruksi",
+      jobTitle: "Fullstack Developer & IT Support",
       period: "Jan 2023 - Present",
     },
     {
@@ -30,7 +45,8 @@ function IntroduceMe() {
 
   return (
     <div
-      className="bg-gray-800 text-white pt-24 pb-10 px-12 md:px-24 md:py-20 w-full"
+      id="scroll"
+      className="bg-gray-800 text-white py-24 px-12 md:px-24 md:py-20 xl:pb-40 w-full"
       // className="py-10 lg:w-1/3 lg:py-36"
     >
       <motion.div
@@ -41,65 +57,57 @@ function IntroduceMe() {
         }}
         className="my-auto"
       >
-        <div>
-          <p className="text-sm text-slate-400 mb-2">
-            Indonesian ReactJS Engineer
-          </p>
-          <p className="text-lg font-bold lg:text-2xl pb-3 text-slate-300 tracking-wider">
-            Hi, There! I&apos;m Nyoman Lanang A.K.A Dimas.
-            <br />
-          </p>
-          {/* <h2 className="text-3xl md:text-4xl font-bold mb-3 px-6 py-10 text-black tracking-tight">
-            Empowering the Web with 1 Year of React JS Mastery and a Strong
-            Portfolio to Prove It
-          </h2> */}
-        </div>
-        <div
-          // initial={{ opacity: 0, x: -30 }}
-          // whileInView={{ opacity: 1, x: 0 }}
-          // transition={{
-          //   duration: 0.8,
-          // }}
-          className="lg:flex lg:gap-12"
-        >
-          <div className="flex-1">
-            <p className="text-3xl text-center md:text-4xl font-bold mt-10 mb-8 text-slate-200 tracking-wider">
-              Tech Stack
+        <div className="">
+          <div className="">
+            <p className="text-4xl text-center font-bold mt-10 mb-8 md:text-6xl md:my-20 xl:my-32 text-slate-200 tracking-wider">
+              My Tech Stack
             </p>
-            <ul className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            <ul className="md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-8 xl:grid-cols-3">
               {techStack.map((item, index) => (
                 <li
-                  className="bg-slate-700 text-center rounded-md py-2"
                   key={index}
+                  className="flex pl-8 py-8 pr-5 mx-auto md:mx-0 xl:mx-auto"
                 >
-                  <span className="text-lg md:text-xl text-slate-300">
-                    {item}
-                  </span>
+                  <Image
+                    src={item.icon}
+                    alt={item.languageName}
+                    width={60}
+                    height={60}
+                    className="mr-8"
+                  />
+                  <p className="m-auto md:mx-0 text-3xl">{item.languageName}</p>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="flex-2">
-            <p className="text-center text-3xl md:text-4xl font-bold mt-10 mb-8 text-slate-200 tracking-wider">
+          <div className="">
+            <p className="text-center text-4xl font-bold mt-10 mb-8 md:text-6xl md:my-20 xl:my-32 text-slate-200 tracking-wider">
               Experiences
             </p>
-            <li className="flex flex-col xl:flex-row justify-between gap-5 text-center">
+            <ul className="flex flex-col justify-between gap-5 text-center xl:grid xl:grid-cols-3">
               {experiences.map((item, index) => (
-                <ul
-                  className="bg-slate-700 rounded-md p-2 flex flex-col gap-2 flex-1"
-                  key={index}
-                >
-                  <h2 className="text-lg md:text-xl font-bold text-slate-300">
-                    {/* {item.companyName} */}
-                    {item.jobTitle}
-                  </h2>
-                  {/* <p className=" text-sm mb-2 text-slate-400 ">
-                    at {item.companyName}
-                  </p> */}
-                  <p className="text-xs text-slate-500">{item.period}</p>
-                </ul>
+                <div key={index} className="xl:flex">
+                  <li className="rounded-md p-2 flex flex-col gap-2 flex-1">
+                    <h2 className="text-lg font-bold text-slate-300 md:text-2xl">
+                      {item.jobTitle}
+                    </h2>
+                    <p className="text-slate-400 md:text-xl">{item.period}</p>
+                  </li>
+
+                  {index == experiences.length - 1 ? (
+                    ""
+                  ) : (
+                    <>
+                      <Separator className="mt-5 xl:hidden w-48 mx-auto bg-slate-400" />
+                      <Separator
+                        orientation="vertical"
+                        className="hidden xl:block"
+                      />
+                    </>
+                  )}
+                </div>
               ))}
-            </li>
+            </ul>
           </div>
         </div>
       </motion.div>
