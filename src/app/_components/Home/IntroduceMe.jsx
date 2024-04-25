@@ -28,7 +28,7 @@ function IntroduceMe() {
   const experiences = [
     {
       companyName: "LSP Gatensi Karya Konstruksi",
-      jobTitle: "Front-End Web Engineer",
+      jobTitle: "Fullstack Developer & IT Support",
       period: "Jan 2023 - Present",
     },
     {
