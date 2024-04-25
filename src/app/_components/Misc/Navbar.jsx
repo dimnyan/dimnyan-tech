@@ -127,7 +127,7 @@ const Navbar = () => {
         } top-0 left-0 md:block w-2/3 z-10`}
         id="nav-box"
       >
-        <ul className="font-medium h-screen py-16 pl-6 md:pl-10 border-r border-yellow-600 rounded-lg w-full bg-gray-900 dark:border-gray-900">
+        <ul className="font-medium h-screen py-16 pl-6 md:pl-10  rounded-lg w-full bg-gray-900 dark:border-gray-900">
           {menus.map((item) => (
             <li key={item.name}>
               <Link
