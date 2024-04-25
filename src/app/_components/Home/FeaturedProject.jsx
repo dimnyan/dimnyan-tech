@@ -12,7 +12,7 @@ const FeaturedProject = () => {
 
   return (
     <div
-      id="scroll"
+      id="projects"
       className="relative bg-dot-white/[0.2] bg-slate-800 text-black px-12 pt-10 pb-20 min-h-screen md:px-24 flex align-middle"
       // className="lg:w-2/3 text-black pt-10 lg:py-32"
     >
@@ -24,7 +24,7 @@ const FeaturedProject = () => {
         className="m-auto"
         style={{ color: "#ECECF9" }}
       >
-        <h1 className="sticky py-10 text-4xl md:text-5xl font-extrabold md:mb-10 tracking-wider text-white xl:text-center">
+        <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-white text-center">
           Featured Projects
         </h1>
 

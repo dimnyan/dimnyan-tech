@@ -1,23 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.bg-img-project-banner {
-  background-image: url(/images/code-bg-2.webp);
-}
-
-.bg-img-to-project {
-  background-image: url(/images/projects-bg.webp);
-}
-
-.bg-img-contact-banner {
-  background-image: url(/images/contact-bg.webp);
-}
-
-body {
-  scroll-behavior: smooth;
-}
-
-.noscrollbar::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
-}
+  @tailwind components;
+  @tailwind utilities;
+  
