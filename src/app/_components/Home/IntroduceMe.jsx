@@ -86,7 +86,7 @@ function IntroduceMe() {
             </p>
             <ul className="flex flex-col justify-between gap-5 text-center xl:grid xl:grid-cols-3">
               {experiences.map((item, index) => (
-                <div key={index}>
+                <div key={index} className="xl:flex">
                   <li className="rounded-md p-2 flex flex-col gap-2 flex-1">
                     <h2 className="text-lg font-bold text-slate-300 md:text-2xl">
                       {item.jobTitle}
@@ -98,11 +98,11 @@ function IntroduceMe() {
                     ""
                   ) : (
                     <>
-                      <Separator className="mt-5 xl:hidden" />
-                      {/* <Separator
+                      <Separator className="mt-5 xl:hidden w-48 mx-auto bg-slate-400" />
+                      <Separator
                         orientation="vertical"
                         className="hidden xl:block"
-                      /> */}
+                      />
                     </>
                   )}
                 </div>

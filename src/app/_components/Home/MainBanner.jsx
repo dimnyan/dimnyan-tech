@@ -9,15 +9,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "../ui/textGenerateEffect";
 
-// export async function generateMetadata() {
-//   return {
-//     title: "Home | dimnyan",
-//     description:
-//       "Nyoman Lanang Kresna | Indonesian Front-End IT Web Developer specialized in NextJS / ReactJS",
-//     image: "/images/my-icon.png",
-//   };
-// }
-
 export const metadata = {
   title: "Home | dimnyan",
   description:
@@ -32,9 +23,9 @@ const MainBanner = () => {
   return (
     <div
       style={{ color: "#ECECF9" }}
-      className="bg-gray-900 h-screen flex px-12 align-middle md:px-24"
+      className="bg-gray-900 lg:flex px-12 align-middle md:px-24 2xl:px-72 lg:h-screen"
     >
-      <div className="max-w-screen-xl mx-auto flex flex-col justify-center">
+      <div className="max-w-screen-xl py-20 mx-auto flex flex-col justify-center">
         <TextGenerateEffect
           words={words}
           className="text-5xl md:text-8xl font-extrabold mb-4 text-slate-300"
@@ -69,11 +60,6 @@ const MainBanner = () => {
               width={24}
               height={15}
             />
-            {/* <FontAwesomeIcon
-              icon={faJs}
-              size="xl"
-              style={{ color: "#F0DB4F" }}
-            /> */}
             <FontAwesomeIcon
               icon={faUbuntu}
               size="xl"
@@ -88,20 +74,38 @@ const MainBanner = () => {
           <div className="flex gap-5 md:flex-row md:gap-5">
             <Link
               href="#scroll"
-              className="font-semibold border-2 border-orange-400 bg-gradient-to-br from-orange-300 to-orange-600 w-max text-black px-5 mt-6 md:mt-6 py-2 text-sm md:text-base rounded-full hover:bg-blue-100 transition duration-300"
+              className="font-semibold border-2 border-orange-400 bg-gradient-to-br from-orange-300 to-orange-600 w-max text-black px-5 mt-6 md:mt-6 py-2 text-sm md:text-base rounded-full hover:bg-blue-100 lg:font-normal transition duration-300"
             >
               Learn More
             </Link>
 
             <Link
               href="#projects"
-              className="border-2 border-teal-400 w-max px-5 mt-6 md:mt-6 py-2 text-sm md:text-base font-semibold rounded-full bg-gradient-to-br from-teal-300 to-teal-600 text-black transition duration-300"
+              className="border-2 border-teal-400 w-max px-5 mt-6 md:mt-6 py-2 text-sm md:text-base font-semibold lg:font-normal rounded-full bg-gradient-to-br from-teal-300 to-teal-600 text-black transition duration-300"
             >
               See My Projects
             </Link>
           </div>
         </motion.div>
       </div>
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 1, opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 2,
+        }}
+        className="m-auto"
+      >
+        <Image
+          src="/images/my-icon.png"
+          width={350}
+          height={350}
+          alt="Dimas Nyoman Profile Pict"
+          className="m-auto pb-16 max-w-6xl md:px-3 md:w-auto"
+          priority="true"
+        />
+      </motion.div>
     </div>
   );
 };

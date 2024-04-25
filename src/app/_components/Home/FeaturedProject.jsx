@@ -62,7 +62,7 @@ const FeaturedProject = () => {
                     <CardItem
                       translateZ={20}
                       as="button"
-                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                      className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold"
                       onClick={() => router.push(`/projects/${item.title}`)}
                     >
                       See More
@@ -74,7 +74,7 @@ const FeaturedProject = () => {
           ))}
         </ul>
         <div className="w-full flex justify-center">
-          <Button className="text-lg">
+          <Button className="bg-slate-900 text-white border-slate-800 text-base">
             <Link href="/projects">See More Projects</Link>
           </Button>
         </div>
