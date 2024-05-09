@@ -54,6 +54,7 @@ export default function Page({ params }) {
             <Link
               href={found.livePageLink}
               className="font-bold text-slate-200 hover:text-orange-500 border-b border-b-orange-500 pb-1 w-fit mx-auto"
+              target="_blank"
             >
               View Live Page
             </Link>

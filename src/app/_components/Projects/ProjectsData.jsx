@@ -1,6 +1,6 @@
 const Projects = [
   {
-    title: "HR Asesor Data Management System - MERN",
+    title: "HR Asesor Data Management System",
     description:
       "In this project, I developed a full-stack web application using the MERN (MongoDB, Express.js, React, and Node.js) stack to create, read, update, and delete (CRUD) asesor data for my company's HR department,  with stats and filters to make the system user-friendly for HR professionals to manage the information of asesors within the organization efficiently.",
     imageUrl: "/images/asesor-thumbnail.png",
@@ -44,7 +44,7 @@ const Projects = [
       "Benefits: The Asesor Management System optimizes the HR workflow by providing a centralized and efficient platform for managing asesor data. With its intuitive interface, advanced features, and robust security measures, AMS empowers HR professionals to make informed decisions, maintain data accuracy, and enhance overall productivity in handling the workforce within the organization.",
   },
   {
-    title: "Exam Admin Dashboard - ReactJS",
+    title: "Exam Admin Dashboard",
     description:
       "This application aims to empower company administrators with the tools they need to monitor and ensure the completeness of essential documents while the exam is going.",
     imageUrl: "/images/adminApp-thumbnail.jpg",
@@ -86,7 +86,7 @@ const Projects = [
       "The Exam Admin Dashboard enhances the efficiency and accuracy of exam administration by providing administrators with a centralized hub for monitoring, document management, and communication. With its real-time capabilities and user-friendly interface, the application empowers administrators to ensure the smooth execution of exams, uphold document completeness, and promptly address any issues that may arise during the examination process.",
   },
   {
-    title: "F1 Standings Tracker - ReactJS PublicAPI",
+    title: "F1 Standings Tracker",
     description:
       'The "F1 Standings Tracker" is a web frontend project built using ReactJS that allows Formula 1 enthusiasts to stay updated with the latest drivers standings in the F1 racing season. This dynamic and user-friendly application fetches data from an API source to provide real-time information about the current standings of F1 drivers, their points, and their team affiliations.',
     livePageLink: "https://f1.dimnyan.tech/",
@@ -121,7 +121,7 @@ const Projects = [
   },
 
   {
-    title: "Personal Landing Page - NextJS TailwindCSS on Vercel",
+    title: "Personal Landing Page",
     description:
       "Making a memorable first impression on the digital stage. Welcome to my Personal Landing Page! Build with Next.js & Tailwind CSS. This project is a showcase of modern web development excellence, powered by Next.js and styled with the elegance of Tailwind CSS. Hosted on Vercel, it's a dynamic, lightning-fast, and visually stunning personal landing page.",
     sourceCodeLink: "https://github.com/dimnyan/dimnyan-tech",
@@ -163,7 +163,7 @@ const Projects = [
   },
 
   {
-    title: "Expense Tracking App with ReactJS",
+    title: "Expense Tracking App ",
     description:
       "This project is part of my Udemy course in ReactJS, focusing on the creation of an Expense Tracker App. The core functionality of this app includes expense entry, categorization, and a dynamic chart with real-time updates as users apply filters.",
     sourceCodeLink: "https://github.com/dimnyan/Udemy-React-expenseApp",
@@ -206,44 +206,94 @@ const Projects = [
   },
 
   {
-    title: "Penguin Wave Animation - HTML CSS",
+    title: "Dynamic Quote Generator ",
     description:
-      "The Penguin Wave Animation project is a fun web animation created using HTML and CSS. It features an adorable penguin character with a waving hand, bringing life to the web page users with its playful movement.",
-    livePageLink: "http://dimnyan.000webhostapp.com/Projects/penguinwave.html",
-    sourceCodeLink:
-      "https://github.com/dimnyan/freeCodeCamp-responsiveDesign/tree/main/16.%20Penguin%20Wave",
-
-    imageUrl: "/images/penguin-thumbnail.png",
+      "This project showcases a captivating single-page application (SPA) built with React and Redux for state management. It leverages a public quote API to fetch inspiring quotes, keeping users engaged with a continuous stream of wisdom.",
+    livePageLink: "http://quotes.dimnyan.tech",
+    sourceCodeLink: "https://github.com/dimnyan/fe-challenge-1-freecodecamp",
+    imageUrl: "/images/quotes-thumbnail.png",
     features: [
       {
-        title: "HTML Structure",
+        title: "Random Quote Display",
         list: [
-          "The HTML structure is clean and straightforward, providing a solid foundation for the penguin animation.",
-          "Elements are appropriately organized to support the seamless integration of the penguin character into various web pages.",
+          "The application seamlessly retrieves quotes from a public API, presenting users with a new thought-provoking quote each time they interact with it.",
         ],
       },
       {
-        title: "CSS Styling",
+        title: "Dynamic Color Scheme",
         list: [
-          "CSS styles are thoughtfully applied to bring the penguin to life, with attention to details such as color, shading, and proportions.",
-          "The code is well-organized and commented, making it easy for developers to understand and customize the animation to suit different themes or branding.",
+          "To enhance the interactive experience, the background and button colors are randomly generated upon every quote change. This creates a visually dynamic and engaging presentation.",
         ],
       },
       {
-        title: "Adorable Penguin Character",
+        title: "React & Redux Architecture",
         list: [
-          "The project stars a cute penguin character designed to evoke a sense of joy and playfulness.",
-          "The penguin comes to life with a dynamic wave animation, creating a lighthearted and entertaining element for website visitors.",
+          "The application leverages React's component-based structure for efficient UI rendering and Redux for centralized and predictable state management",
         ],
       },
       {
-        title: "Responsive Design",
+        title: "Vercel Deployment",
         list: [
-          "The Penguin Wave Animation is designed to be responsive, adapting gracefully to different screen sizes and resolutions.",
-          "The responsive design ensures that the playful penguin can spread joy across a variety of devices, from desktops to smartphones.",
+          "The application is hosted on Vercel, a robust platform that ensures smooth deployment and high availability",
+        ],
+      },
+      {
+        title: "Custom Domain",
+        list: [
+          "For a professional touch, the application is accessible at the dedicated domain quotes.dimnyan.tech, making it readily accessible and memorable",
         ],
       },
     ],
+    techStack: [
+      "Frontend: React (JavaScript library for building user interfaces)",
+      "State Management: Redux (JavaScript library for predictable state management)",
+      "API Fetching: Public Quote API (source for retrieving quotes)",
+      "Deployment: Vercel (platform for deployment and hosting)",
+      "Domain: quotes.dimnyan.tech (custom domain for accessibility)",
+    ],
+    additionalDesc:
+      "I hope this project description effectively captures the essence of your quote generator. Feel free to tailor it further to highlight any specific aspects or functionalities you'd like to emphasize.",
   },
+
+  // {
+  //   title: "Penguin Wave Animation - HTML CSS",
+  //   description:
+  //     "The Penguin Wave Animation project is a fun web animation created using HTML and CSS. It features an adorable penguin character with a waving hand, bringing life to the web page users with its playful movement.",
+  //   livePageLink: "http://dimnyan.000webhostapp.com/Projects/penguinwave.html",
+  //   sourceCodeLink:
+  //     "https://github.com/dimnyan/freeCodeCamp-responsiveDesign/tree/main/16.%20Penguin%20Wave",
+
+  //   imageUrl: "/images/penguin-thumbnail.png",
+  //   features: [
+  //     {
+  //       title: "HTML Structure",
+  //       list: [
+  //         "The HTML structure is clean and straightforward, providing a solid foundation for the penguin animation.",
+  //         "Elements are appropriately organized to support the seamless integration of the penguin character into various web pages.",
+  //       ],
+  //     },
+  //     {
+  //       title: "CSS Styling",
+  //       list: [
+  //         "CSS styles are thoughtfully applied to bring the penguin to life, with attention to details such as color, shading, and proportions.",
+  //         "The code is well-organized and commented, making it easy for developers to understand and customize the animation to suit different themes or branding.",
+  //       ],
+  //     },
+  //     {
+  //       title: "Adorable Penguin Character",
+  //       list: [
+  //         "The project stars a cute penguin character designed to evoke a sense of joy and playfulness.",
+  //         "The penguin comes to life with a dynamic wave animation, creating a lighthearted and entertaining element for website visitors.",
+  //       ],
+  //     },
+  //     {
+  //       title: "Responsive Design",
+  //       list: [
+  //         "The Penguin Wave Animation is designed to be responsive, adapting gracefully to different screen sizes and resolutions.",
+  //         "The responsive design ensures that the playful penguin can spread joy across a variety of devices, from desktops to smartphones.",
+  //       ],
+  //     },
+  //   ],
+  // },
 ];
 export default Projects;

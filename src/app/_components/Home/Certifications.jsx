@@ -1,18 +1,20 @@
-import Image from "next/image";
-import Projects from "../Projects/ProjectsData";
-import { motion } from "framer-motion";
+import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3dCard";
-import { useRouter } from "next/navigation";
-import { Button } from "../ui/movingBorder";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
-const FeaturedProject = () => {
-  const topProjects = Projects.slice(0, 4);
-  const router = useRouter();
-
+const Certifications = () => {
+  const certifications = [
+    {
+      title: "Responsive Web Design",
+      description:
+        "This certificate is awarded in recognition of successful completion of the Responsive Web Design Certification offered by freeCodeCamp.org. The program provided a comprehensive foundation in the fundamental building blocks of HTML and CSS web development. Through a mix of lessons and projects.",
+      imageUrl: "/images/responsive-web-cert.png",
+    },
+  ];
   return (
     <div
-      id="projects"
       className="relative bg-dot-white/[0.2] bg-slate-800 text-black px-12 pt-10 pb-20 min-h-screen md:px-24 flex align-middle"
       // className="lg:w-2/3 text-black pt-10 lg:py-32"
     >
@@ -25,13 +27,10 @@ const FeaturedProject = () => {
         style={{ color: "#ECECF9" }}
       >
         <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-white text-center">
-          Featured Projects
+          Certifications
         </h1>
-
-        {/* <p className="sticky z-10 top-20">Featured</p> */}
-
-        <ul className="grid grid-cols-1 flex-1 gap-5 xl:grid-cols-2 lg:gap-9">
-          {topProjects.map((item) => (
+        <ul className="grid grid-cols-1 flex-1 gap-5 xl:grid-cols-1 lg:gap-9">
+          {certifications.map((item) => (
             <li key={item.title}>
               <CardContainer className="inter-var">
                 <CardBody className="relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-slate-900 border-black/[0.1] w-auto sm:w-[35rem] md:w-[40rem] h-auto rounded-xl p-6 border  ">
@@ -45,7 +44,7 @@ const FeaturedProject = () => {
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="line-clamp-1 text-sm max-w-sm mt-2 text-neutral-300"
+                    className="text-sm mt-2 text-neutral-300"
                   >
                     {item.description}
                   </CardItem>
@@ -58,31 +57,29 @@ const FeaturedProject = () => {
                       alt={item.description}
                     />
                   </CardItem>
-                  <div className="flex justify-between items-center mt-10">
+                  <Link
+                    href={
+                      "https://www.freecodecamp.org/certification/dimnyan/responsive-web-design"
+                    }
+                    target="_blank"
+                    className="flex justify-between items-center mt-10"
+                  >
                     <CardItem
                       translateZ={20}
                       as="button"
                       className="px-4 py-2 rounded-xl bg-white text-black text-xs font-bold"
-                      onClick={() => router.push(`/projects/${item.title}`)}
                     >
                       See More
                     </CardItem>
-                  </div>
+                  </Link>
                 </CardBody>
               </CardContainer>
             </li>
           ))}
         </ul>
-        <Link href="/projects">
-          <div className="w-full flex justify-center">
-            <Button className="bg-slate-900 text-white border-slate-800 text-base">
-              See More Projects
-            </Button>
-          </div>
-        </Link>
       </motion.div>
     </div>
   );
 };
 
-export default FeaturedProject;
+export default Certifications;
