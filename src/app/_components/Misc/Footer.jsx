@@ -73,7 +73,7 @@ function Footer() {
             >
               {/* <FontAwesomeIcon icon={faInstagram} size="2xl" /> */}
               <Image
-                src={"/images/instagram.svg"}
+                src={"/images/Instagram.svg"}
                 width={30}
                 height={30}
                 alt=""
