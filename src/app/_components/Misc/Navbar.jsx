@@ -85,7 +85,7 @@ const Navbar = () => {
             priority="true"
           />
           <span className="bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-blue-400 self-center text-xl md:text-2xl font-bold whitespace-nowrap">
-            dimnyan
+            Nyoman Lanang
           </span>
         </Link>
         <button
