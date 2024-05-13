@@ -10,16 +10,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "../ui/textGenerateEffect";
 
-// export const metadata = {
-//   title: "Home | dimnyan",
-//   description:
-//     "Nyoman Lanang Kresna | Indonesian Front-End IT Web Developer specialized in NextJS / ReactJS",
-//   image: "/images/my-icon.png",
-// };
-
 const MainBanner = () => {
   const words = "Nyoman Lanang Kresna Erlangga";
-  // const words = "Bringing Ideas to Life on the Web";
 
   return (
     <div
