@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import { CardBody, CardContainer, CardItem } from "../ui/3dCard";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -15,6 +15,7 @@ const Certifications = () => {
   ];
   return (
     <div
+      id="scroll"
       className="relative bg-dot-white/[0.2] bg-slate-800 text-black px-12 pt-10 pb-20 min-h-screen md:px-24 flex align-middle"
       // className="lg:w-2/3 text-black pt-10 lg:py-32"
     >

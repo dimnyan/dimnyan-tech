@@ -1,3 +1,4 @@
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faReact,
@@ -9,12 +10,12 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "../ui/textGenerateEffect";
 
-export const metadata = {
-  title: "Home | dimnyan",
-  description:
-    "Nyoman Lanang Kresna | Indonesian Front-End IT Web Developer specialized in NextJS / ReactJS",
-  image: "/images/my-icon.png",
-};
+// export const metadata = {
+//   title: "Home | dimnyan",
+//   description:
+//     "Nyoman Lanang Kresna | Indonesian Front-End IT Web Developer specialized in NextJS / ReactJS",
+//   image: "/images/my-icon.png",
+// };
 
 const MainBanner = () => {
   const words = "Nyoman Lanang Kresna Erlangga";
@@ -80,10 +81,10 @@ const MainBanner = () => {
             </Link>
 
             <Link
-              href="#projects"
+              href=""
               className="border-2 border-teal-400 w-max px-5 mt-6 md:mt-6 py-2 text-sm md:text-base font-semibold lg:font-normal rounded-full bg-gradient-to-br from-teal-300 to-teal-600 text-black transition duration-300"
             >
-              See My Projects
+              Contact Me
             </Link>
           </div>
         </motion.div>
