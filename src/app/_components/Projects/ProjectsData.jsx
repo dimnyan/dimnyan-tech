@@ -206,6 +206,104 @@ const Projects = [
   },
 
   {
+    title: "Real-Time Markdown Editor",
+    description:
+      "This project is a web application built with React and Redux that allows users to write and edit text in Markdown format, providing a live preview of the rendered HTML.",
+    livePageLink: "http://markdown.dimnyan.tech",
+    sourceCodeLink: "https://github.com/dimnyan/fe-challenge-2-freecodecamp",
+    imageUrl: "/images/markdown-thumbnail.png",
+    features: [
+      {
+        title: "Markdown Editing",
+        list: [
+          "Users can write and edit text using Markdown syntax with real-time feedback.",
+        ],
+      },
+      {
+        title: "Live Preview",
+        list: [
+          "The application displays a live preview of the rendered HTML as the user types, ensuring clarity and accuracy.",
+        ],
+      },
+      {
+        title: "Redux State Management",
+        list: [
+          "Redux efficiently manages the application state, including the current Markdown content and potentially additional features like formatting options.",
+        ],
+      },
+      {
+        title: "Deployment",
+        list: [
+          "The application is hosted on Vercel, a robust platform that ensures smooth deployment and high availability",
+        ],
+      },
+      {
+        title: "Custom Domain",
+        list: [
+          "For a professional touch, the application is accessible at the dedicated domain markdown.dimnyan.tech, making it readily accessible and memorable",
+        ],
+      },
+    ],
+    techStack: [
+      "Frontend: React (JavaScript library for building user interfaces)",
+      "State Management: Redux (JavaScript library for predictable state management)",
+      "React Markdown Library (e.g., react-markdown): Enables parsing of Markdown syntax and rendering the corresponding HTML",
+      "Deployment: Vercel (platform for deployment and hosting)",
+      "Domain: markdown.dimnyan.tech (custom domain for accessibility)",
+    ],
+    additionalDesc:
+      "This project is ideal for anyone interested in learning React, Redux, and building interactive web applications. It serves as a valuable tool for earning the FreeCodeCamp certification and showcasing web development expertise in working with rich text formats like Markdown.",
+  },
+  {
+    title: "Interactive Drum Pad",
+    description:
+      "This project is a web-based drum pad application built with React and Redux, allowing users to create beats by triggering audio samples of drum sounds.",
+    livePageLink: "http://drumpad.dimnyan.tech",
+    sourceCodeLink: "https://github.com/dimnyan/fe-challenge-3-freecodecamp",
+    imageUrl: "/images/drumpad-thumbnail.png",
+    features: [
+      {
+        title: "Drum Pad Interface",
+        list: [
+          "Provides a user-friendly interface with virtual drum pads that trigger corresponding sounds when clicked.",
+        ],
+      },
+      {
+        title: "Audio Playback",
+        list: [
+          "Plays high-quality audio samples of various drum sounds when a corresponding button is pressed.",
+        ],
+      },
+      {
+        title: "Keyboard Integration",
+        list: [
+          "Utilizes document event listeners to capture key presses and map them to specific drum sounds, providing a tactile playing experience.",
+        ],
+      },
+      {
+        title: "Redux State Management",
+        list: [
+          "Manages application state using Redux, potentially including information on the currently selected drum sound or playback settings.",
+        ],
+      },
+      {
+        title: "Custom Domain",
+        list: [
+          "For a professional touch, the application is accessible at the dedicated domain drumpad.dimnyan.tech, making it readily accessible and memorable",
+        ],
+      },
+    ],
+    techStack: [
+      "Frontend: React (JavaScript library for building user interfaces)",
+      "State Management: Redux (JavaScript library for predictable state management)",
+      "Document Event Listener: Captures key presses from the user's keyboard.",
+      "Deployment: Vercel (platform for deployment and hosting)",
+      "Domain: drumpad.dimnyan.tech (custom domain for accessibility)",
+    ],
+    additionalDesc:
+      "This project is designed for anyone interested in learning React, Redux, and building interactive web applications with sound integration. It serves as a valuable tool for earning the FreeCodeCamp certification and showcasing web development skills in creating engaging user experiences.",
+  },
+  {
     title: "Dynamic Quote Generator ",
     description:
       "This project showcases a captivating single-page application (SPA) built with React and Redux for state management. It leverages a public quote API to fetch inspiring quotes, keeping users engaged with a continuous stream of wisdom.",
