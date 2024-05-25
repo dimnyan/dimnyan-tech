@@ -7,6 +7,12 @@ import Link from "next/link";
 const Certifications = () => {
   const certifications = [
     {
+      title: "Front End Development Libraries",
+      description:
+        "This certificate is awarded in recognition of successful completion of the Front End Development Libraries Certification offered by freeCodeCamp.org. The program provided a comprehensive lessons and tasks in the ReactJS, Redux and Bootstrap development. Through a mix of lessons and projects.",
+      imageUrl: "/images/front-end-cert.png",
+    },
+    {
       title: "Responsive Web Design",
       description:
         "This certificate is awarded in recognition of successful completion of the Responsive Web Design Certification offered by freeCodeCamp.org. The program provided a comprehensive foundation in the fundamental building blocks of HTML and CSS web development. Through a mix of lessons and projects.",
@@ -30,7 +36,7 @@ const Certifications = () => {
         <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-white text-center">
           Certifications
         </h1>
-        <ul className="grid grid-cols-1 flex-1 gap-5 xl:grid-cols-1 lg:gap-9">
+        <ul className="grid grid-cols-1  flex-1 gap-5 2xl:grid-cols-2 lg:gap-9 xl:gap-12">
           {certifications.map((item) => (
             <li key={item.title}>
               <CardContainer className="inter-var">
