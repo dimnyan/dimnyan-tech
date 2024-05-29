@@ -66,7 +66,7 @@ function Footer() {
             </Link>
 
             <Link
-              href="https://www.instagram.com/dimnyan"
+              href="https://www.instagram.com/code.with.dimnyan"
               target="_blank"
               rel="noopener noreferrer"
               // className="text-gray-400 hover:text-orange-500 mt-3"
