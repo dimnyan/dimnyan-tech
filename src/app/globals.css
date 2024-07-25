@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: #fafafa;
+}
+.icon-container {
+  white-space: nowrap;
+}
+
+.icon-container li {
+  display: inline-block;
+}
+
+/* Animation */
+.icon-container {
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

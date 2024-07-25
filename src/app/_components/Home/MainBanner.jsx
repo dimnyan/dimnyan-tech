@@ -15,13 +15,13 @@ const MainBanner = () => {
 
   return (
     <div
-      style={{ color: "#ECECF9" }}
-      className="bg-gray-900 lg:flex px-12 align-middle md:px-24 2xl:px-72 lg:h-screen"
+      // style={{ color: "#ECECF9" }}
+      className="lg:flex px-12 align-middle md:px-24 2xl:px-72 lg:h-screen"
     >
       <div className="max-w-screen-xl py-20 mx-auto flex flex-col justify-center">
         <TextGenerateEffect
           words={words}
-          className="text-5xl md:text-8xl font-extrabold mb-4 text-slate-300"
+          className="text-5xl md:text-8xl font-extrabold mb-4"
         />
         <motion.div
           initial={{ y: 30, opacity: 0 }}
@@ -31,10 +31,10 @@ const MainBanner = () => {
             delay: 2,
           }}
         >
-          <p className="text-slate-400 text- md:text-lg text-left py-2">
+          <p className="text-slate-800 text- md:text-lg text-left py-2">
             Experienced Software Web Developer
           </p>
-          <div className="py-5 flex gap-6">
+          {/* <div className="py-5 flex gap-6">
             <FontAwesomeIcon
               icon={faReact}
               style={{ color: "#06b6d4" }}
@@ -63,18 +63,18 @@ const MainBanner = () => {
               size="xl"
               style={{ color: "#efefef" }}
             />
-          </div>
+          </div> */}
           <div className="flex gap-5 md:flex-row md:gap-5">
             <Link
               href="#scroll"
-              className="font-semibold border-2 border-orange-400 bg-gradient-to-br from-orange-300 to-orange-600 w-max text-black px-5 mt-6 md:mt-6 py-2 text-sm md:text-base rounded-full hover:bg-blue-100 lg:font-normal transition duration-300"
+              className="font-semibold border-2 border-black bg-black w-max text-white px-5 mt-6 md:mt-6 py-2 text-sm md:text-base rounded-full hover:bg-white hover:text-black lg:font-normal transition duration-300"
             >
               Learn More
             </Link>
 
             <Link
               href=""
-              className="border-2 border-teal-400 w-max px-5 mt-6 md:mt-6 py-2 text-sm md:text-base font-semibold lg:font-normal rounded-full bg-gradient-to-br from-teal-300 to-teal-600 text-black transition duration-300"
+              className="border-2 border-[#9591a4] w-max px-5 mt-6 md:mt-6 py-2 text-sm md:text-base font-semibold lg:font-normal rounded-full bg-[#9591a4] text-white hover:bg-white hover:text-black transition duration-300"
             >
               Contact Me
             </Link>

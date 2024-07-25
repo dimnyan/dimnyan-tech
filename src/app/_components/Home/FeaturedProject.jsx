@@ -19,13 +19,13 @@ const FeaturedProject = () => {
     >
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-slate-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <motion.div
-        initial={{ y: 30, opacity: 0 }}
+        initial={{ x: 30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.7 }}
         className="m-auto"
         style={{ color: "#ECECF9" }}
       >
-        <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-white text-center">
+        <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-center">
           Featured Projects
         </h1>
 
@@ -35,10 +35,11 @@ const FeaturedProject = () => {
           {topProjects.map((item) => (
             <li key={item.title}>
               <CardContainer className="inter-var">
-                <CardBody className="relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-slate-900 border-black/[0.1] w-auto sm:w-[35rem] md:w-[40rem] h-auto rounded-xl p-6 border  ">
+                {/* <CardBody className="relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-slate-900 border-black/[0.1] w-auto sm:w-[35rem] md:w-[40rem] h-auto rounded-xl p-6 border  "> */}
+                <CardBody className="relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-white border-black/[0.1] w-auto sm:w-[35rem] md:w-[40rem] h-auto rounded-xl p-6 border  ">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold  text-white line-clamp-1 cursor-pointer"
+                    className="text-xl font-bold line-clamp-1 cursor-pointer text-black"
                     onClick={() => router.push(`/projects/${item.title}`)}
                   >
                     {item.title}
@@ -46,7 +47,7 @@ const FeaturedProject = () => {
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="line-clamp-1 text-sm max-w-sm mt-2 text-neutral-300"
+                    className="line-clamp-1 text-sm max-w-sm mt-2 text-black"
                   >
                     {item.description}
                   </CardItem>
@@ -55,7 +56,7 @@ const FeaturedProject = () => {
                       src={item.imageUrl}
                       height="1000"
                       width="1000"
-                      className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      className="w-full object-cover rounded-xl group-hover/card:shadow-xl border border-black/[0.1]"
                       alt={item.description}
                     />
                   </CardItem>

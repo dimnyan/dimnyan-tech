@@ -64,10 +64,7 @@ const Navbar = () => {
   //scale 1 - 0.7
 
   return (
-    <nav
-      className="border-gray-200 bg-gray-900 sticky top-0 z-10 px-5 md:px-24"
-      ref={scope}
-    >
+    <nav className="bg-[#fafafa] sticky top-0 z-10 px-5 md:px-24" ref={scope}>
       <motion.div
         initial={{ y: 15, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -84,20 +81,22 @@ const Navbar = () => {
             className="mx-auto w-full md:w-auto"
             priority="true"
           />
-          <span className="bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-blue-400 self-center text-xl md:text-2xl font-bold whitespace-nowrap">
-            Nyoman Lanang
+          {/* <span className="bg-clip-text text-transparent bg-gradient-to-br from-green-400 to-blue-400 self-center text-xl md:text-2xl font-bold whitespace-nowrap"> */}
+          <span className=" self-center text-xl md:text-2xl font-bold whitespace-nowrap">
+            dimnyan
           </span>
         </Link>
         <button
           onClick={() => {
             setIsOpen(!isOpen);
           }}
-          className="z-20 inline-flex items-center align-middle justify-center text-sm text-gray-500 rounded-lg  focus:outline-none focus:ring-2  
+          className="z-20 inline-flex items-center align-middle justify-center text-sm rounded-lg  focus:outline-none focus:ring-2  
                   
           "
           // aria-expanded={isOpen ? "true" : "false"}
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-br from-orange-300 to-orange-600 text-lg tracking-wider font-extrabold">
+          {/* <span className="bg-clip-text text-transparent bg-gradient-to-br from-orange-300 to-orange-600 text-lg tracking-wider font-extrabold"> */}
+          <span className=" text-lg tracking-wider font-extrabold">
             {isOpen ? "CLOSE" : "MENU"}
           </span>
           {/* <span className="sr-only">Open main menu</span>

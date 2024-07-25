@@ -22,23 +22,37 @@ const Certifications = () => {
   return (
     <div
       id="scroll"
-      className="relative bg-dot-white/[0.2] bg-slate-800 text-black px-12 pt-10 pb-20 min-h-screen md:px-24 flex align-middle"
+      className="relative bg-dot-white/[0.2] bg-white text-black pt-10 pb-20  flex align-middle"
       // className="lg:w-2/3 text-black pt-10 lg:py-32"
     >
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-slate-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-slate-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
       <motion.div
-        initial={{ y: 30, opacity: 0 }}
+        initial={{ x: 30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.7 }}
         className="m-auto"
         style={{ color: "#ECECF9" }}
       >
-        <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-white text-center">
+        <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-black text-center">
           Certifications
         </h1>
-        <ul className="grid grid-cols-1  flex-1 gap-5 2xl:grid-cols-2 lg:gap-9 xl:gap-12">
+        <ul className="flex-1 gap-5 2xl:grid-cols-2 lg:gap-9 xl:gap-12">
           {certifications.map((item) => (
-            <li key={item.title}>
+            <li
+              key={item.title}
+              className="group/cert flex items-center flex-col md:flex-row py-10 px-5 w-full md:text-slate-700 hover:text-white "
+            >
+              {/* <Image
+                src={item.imageUrl}
+                height="400"
+                width="400"
+                alt={item.title}
+                // className="w-full object-cover  rounded-xl mb-7 aspect-auto md:w-[0px] group-hover/cert:md:w-[300px]"
+                className="w-full object-cover rounded-xl mb-7 aspect-auto md:invisible group-hover/cert:md:visible md:w-[300px] transition ease-in-out"
+              />
+              <span className="text-xl font-bold transition ease-in-out pl-10">
+                {item.title}
+              </span> */}
               <CardContainer className="inter-var">
                 <CardBody className="relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-slate-900 border-black/[0.1] w-auto sm:w-[35rem] md:w-[40rem] h-auto rounded-xl p-6 border  ">
                   <CardItem

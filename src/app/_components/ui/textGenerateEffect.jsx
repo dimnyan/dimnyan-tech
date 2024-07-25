@@ -27,7 +27,8 @@ export const TextGenerateEffect = ({ words, className }) => {
             return (
               <motion.span
                 key={word + idx}
-                className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500 text-5xl md:text-8xl font-extrabold mb-4 text-slate-300 opacity-0"
+                // className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500 text-5xl md:text-8xl font-extrabold mb-4 text-slate-300 opacity-0"
+                className=" text-5xl md:text-8xl font-extrabold mb-4  opacity-0"
               >
                 {word}{" "}
               </motion.span>
@@ -36,7 +37,7 @@ export const TextGenerateEffect = ({ words, className }) => {
             return (
               <motion.span
                 key={word + idx}
-                className="text-5xl md:text-8xl font-extrabold mb-4 text-slate-300 opacity-0"
+                className="text-5xl md:text-8xl font-extrabold mb-4  opacity-0"
               >
                 {word}{" "}
               </motion.span>

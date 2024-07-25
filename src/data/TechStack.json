@@ -1,0 +1,21 @@
+[
+  {
+    "languageName": "MySQL",
+    "icon": "/images/mysql.png"
+  },
+  { "languageName": "Redux", "icon": "/images/redux-logo-svg-vector.svg" },
+  { "languageName": "NextJS", "icon": "/images/nextjs.png" },
+  { "languageName": "ReactJS", "icon": "/images/reactjs.png" },
+  {
+    "languageName": "ExpressJS",
+    "icon": "/images/expressjs.png"
+  },
+  {
+    "languageName": "NodeJS",
+    "icon": "/images/nodejs.png"
+  },
+  {
+    "languageName": "MongoDB",
+    "icon": "/images/mongodb.png"
+  }
+]
