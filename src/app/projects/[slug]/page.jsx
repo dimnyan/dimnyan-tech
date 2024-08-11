@@ -38,7 +38,7 @@ export default function Page({ params }) {
             src={found.imageUrl}
             alt={found.title}
             fill
-            className="bg-cover"
+            className="bg-cover rounded-xl"
           />
         </div>
         <div className="flex flex-col md:flex-row gap-10 my-10 justify-center">
@@ -68,7 +68,7 @@ export default function Page({ params }) {
                 <li className="py-1" key={Math.random()}>
                   {item.title}:
                   <ul className="list-disc px-5 py-2">
-                    {item.list.map((list) => (
+                    {item.list?.map((list) => (
                       <li key={Math.random()}>{list}</li>
                     ))}
                   </ul>

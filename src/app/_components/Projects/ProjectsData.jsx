@@ -1,5 +1,58 @@
 const Projects = [
   {
+    title: "Tap Media Derbala Landing Page",
+    description:
+      "The Tap Media Derbala Landing Page is a dynamic web application designed to showcase the IT services offered by Tap Media Derbala. The company specializes in media freelance services, including website creation and content creation. The landing page will serve as the primary online platform for attracting potential clients and providing essential information about the company's offerings.",
+    imageUrl: "/images/derbala-thumbnail.png",
+    features: [
+      {
+        title:
+          "Landing Page: A visually appealing and informative homepage that clearly communicates Tap Media Derbala's services and value proposition.",
+      },
+      {
+        title:
+          "Admin Panel: A secure backend interface for managing website content, including text, images, and other relevant information.",
+      },
+      {
+        title:
+          "Contact Form: A user-friendly form allowing visitors to get in touch with Tap Media Derbala for inquiries or business proposals.",
+      },
+    ],
+    techStack: [
+      "Next.js: A React framework for building static and dynamic web applications, chosen for its performance, SEO, and developer experience.",
+      "Styling: Tailwind CSS for a clean and elegant design.",
+      "Prisma: An ORM (Object-Relational Mapper) that simplifies database interactions and provides a type-safe layer.",
+      "MongoDB: A flexible and scalable NoSQL database for storing website content and user data.",
+      "Hosting: Vercel for high-performance hosting and automatic deployments.",
+    ],
+    additionalDesc: "",
+  },
+  {
+    title: "LSP Gatensi Landing Page",
+    description:
+      "The LSP Gatensi Landing Page is a web application designed to serve as the primary online presence for LSP Gatensi, a company specializing in civil engineer certification. The platform provides essential information about the company's role in certifying civil engineers under the auspices of the Indonesian Ministry of Public Works and Public Housing (PUPR) and the National Certification Agency (BNSP).",
+    imageUrl: "/images/lsp-thumbnail.png",
+    features: [
+      {
+        title:
+          "Create a visually appealing and informative landing page that accurately represents LSP Gatensi's mission and services.",
+      },
+      {
+        title:
+          "Clearly communicate the company's role in civil engineer certification.",
+      },
+      {
+        title: "Establish a strong online presence for LSP Gatensi.",
+      },
+      {
+        title:
+          "Provide essential contact information and call-to-action elements.",
+      },
+    ],
+    techStack: ["Frontend: Next.js", "Deployment: Cloud Linux server"],
+    additionalDesc: "",
+  },
+  {
     title: "HR Asesor Data Management System",
     description:
       "In this project, I developed a full-stack web application using the MERN (MongoDB, Express.js, React, and Node.js) stack to create, read, update, and delete (CRUD) asesor data for my company's HR department,  with stats and filters to make the system user-friendly for HR professionals to manage the information of asesors within the organization efficiently.",
@@ -44,6 +97,40 @@ const Projects = [
       "Benefits: The Asesor Management System optimizes the HR workflow by providing a centralized and efficient platform for managing asesor data. With its intuitive interface, advanced features, and robust security measures, AMS empowers HR professionals to make informed decisions, maintain data accuracy, and enhance overall productivity in handling the workforce within the organization.",
   },
   {
+    title: "F1 Standings Tracker",
+    description:
+      'The "F1 Standings Tracker" is a web frontend project built using ReactJS that allows Formula 1 enthusiasts to stay updated with the latest drivers standings in the F1 racing season. This dynamic and user-friendly application fetches data from an API source to provide real-time information about the current standings of F1 drivers, their points, and their team affiliations.',
+    livePageLink: "https://f1.dimnyan.tech/",
+    sourceCodeLink: "https://github.com/dimnyan/f1-app",
+
+    imageUrl: "/images/f1-thumbnail.png",
+    features: [
+      {
+        title: "Real-Time Standings",
+        list: [
+          "The application fetches live data from a public API source, providing users with up-to-the-minute information on the current Formula 1 drivers' standings.",
+          ,
+          "Users can stay informed about changes in rankings, points, and team affiliations as the racing season progresses.",
+        ],
+      },
+      {
+        title: "Responsive Design",
+        list: [
+          "The application is designed to be responsive, ensuring a seamless experience across different devices, including desktops, tablets, and mobile phones.",
+          ,
+          "Responsive design elements adapt to various screen sizes, maintaining functionality and aesthetics.",
+        ],
+      },
+    ],
+    techStack: [
+      "Frontend: ReactJS and TailwindCSS for a dynamic and reactive user interface.",
+      "API Integration: Utilizes a public API as the data source for real-time F1 standings.",
+      "Routing: React Router for seamless navigation within the application.",
+    ],
+    additionalDesc:
+      'The "F1 Standings Tracker" caters to the avid Formula 1 fan base, offering a visually appealing and feature-rich platform to stay connected with the latest developments in the racing season. By harnessing the capabilities of ReactJS and a public API, this application provides an engaging and interactive experience, making it the go-to resource for enthusiasts seeking real-time updates on F1 drivers standings, points, and team affiliations.',
+  },
+  {
     title: "Exam Admin Dashboard",
     description:
       "This application aims to empower company administrators with the tools they need to monitor and ensure the completeness of essential documents while the exam is going.",
@@ -84,40 +171,6 @@ const Projects = [
     ],
     additionalDesc:
       "The Exam Admin Dashboard enhances the efficiency and accuracy of exam administration by providing administrators with a centralized hub for monitoring, document management, and communication. With its real-time capabilities and user-friendly interface, the application empowers administrators to ensure the smooth execution of exams, uphold document completeness, and promptly address any issues that may arise during the examination process.",
-  },
-  {
-    title: "F1 Standings Tracker",
-    description:
-      'The "F1 Standings Tracker" is a web frontend project built using ReactJS that allows Formula 1 enthusiasts to stay updated with the latest drivers standings in the F1 racing season. This dynamic and user-friendly application fetches data from an API source to provide real-time information about the current standings of F1 drivers, their points, and their team affiliations.',
-    livePageLink: "https://f1.dimnyan.tech/",
-    sourceCodeLink: "https://github.com/dimnyan/f1-app",
-
-    imageUrl: "/images/f1-thumbnail.png",
-    features: [
-      {
-        title: "Real-Time Standings",
-        list: [
-          "The application fetches live data from a public API source, providing users with up-to-the-minute information on the current Formula 1 drivers' standings.",
-          ,
-          "Users can stay informed about changes in rankings, points, and team affiliations as the racing season progresses.",
-        ],
-      },
-      {
-        title: "Responsive Design",
-        list: [
-          "The application is designed to be responsive, ensuring a seamless experience across different devices, including desktops, tablets, and mobile phones.",
-          ,
-          "Responsive design elements adapt to various screen sizes, maintaining functionality and aesthetics.",
-        ],
-      },
-    ],
-    techStack: [
-      "Frontend: ReactJS and TailwindCSS for a dynamic and reactive user interface.",
-      "API Integration: Utilizes a public API as the data source for real-time F1 standings.",
-      "Routing: React Router for seamless navigation within the application.",
-    ],
-    additionalDesc:
-      'The "F1 Standings Tracker" caters to the avid Formula 1 fan base, offering a visually appealing and feature-rich platform to stay connected with the latest developments in the racing season. By harnessing the capabilities of ReactJS and a public API, this application provides an engaging and interactive experience, making it the go-to resource for enthusiasts seeking real-time updates on F1 drivers standings, points, and team affiliations.',
   },
 
   {

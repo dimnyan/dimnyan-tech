@@ -46,7 +46,7 @@ const FeaturedProject = () => {
                   <CardItem
                     as="p"
                     translateZ="60"
-                    className="line-clamp-1 text-sm max-w-sm mt-2 text-neutral-300"
+                    className="line-clamp-2 text-sm  mt-2 text-neutral-300"
                   >
                     {item.description}
                   </CardItem>
