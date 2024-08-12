@@ -72,7 +72,15 @@ const MainBanner = () => {
           />
         </motion.div>
       </div>
-      <div className="mx-auto flex gap-6 justify-center py-20 xl:pt-16">
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 1, opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 2,
+        }}
+        className="mx-auto flex gap-6 justify-center py-20 xl:pt-16"
+      >
         <FontAwesomeIcon
           icon={faReact}
           style={{ color: "#06b6d4" }}
@@ -106,7 +114,7 @@ const MainBanner = () => {
           style={{ color: "#efefef" }}
           className="md:w-16 md:h-32"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
