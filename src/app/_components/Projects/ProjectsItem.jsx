@@ -14,7 +14,7 @@ const ProjectsItem = () => {
       {Projects.map((item) => (
         // <div key={item.title}>
         <CardContainer key={item.title} className="inter-var">
-          <CardBody className="relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-slate-900 border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border">
+          <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-slate-900 border-black/[0.1] w-auto h-auto rounded-xl p-6 border">
             <CardItem
               translateZ="50"
               className="text-xl font-bold  text-white line-clamp-1 cursor-pointer"

@@ -31,7 +31,7 @@ export default function Page({ params }) {
           <h1 className="text-4xl text-slate-200  font-bold tracking-wider">
             {found.title}
           </h1>
-          <p className="text-slate-400">Uploaded by Admin</p>
+          <p className="text-slate-400">Uploaded by Nyoman</p>
         </div>
         <div className="relative aspect-video flex-1">
           <Image

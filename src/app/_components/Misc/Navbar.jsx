@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion, stagger, useAnimate } from "framer-motion";
 import Image from "next/image";
+import { Squash as Hamburger } from "hamburger-react";
 
 const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
@@ -46,23 +47,6 @@ const Navbar = () => {
     { name: "home", path: "/" },
     { name: "projects", path: "/projects" },
   ];
-  // const [scaler, setScaler] = useState(1);
-
-  // const { scrollYProgress } = useScroll();
-
-  // useEffect(() => {
-  //   if (scrollYProgress.current > 0.27) {
-  //     setScaler(0.7);
-  //   } else if (scrollYProgress.current < 0.27) {
-  //     setScaler(scrollYProgress.current * 0.038571);
-  //   } else if (scrollYProgress.current == 0) {
-  //     setScaler(1);
-  //   }
-  // }, [scrollYProgress.current]);
-
-  //0 - 0.027
-  //scale 1 - 0.7
-
   return (
     <nav
       className="border-gray-200 bg-gray-900 sticky top-0 z-10 px-5 md:px-24"
@@ -88,35 +72,33 @@ const Navbar = () => {
             Nyoman Lanang
           </span>
         </Link>
-        <button
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-          className="z-20 inline-flex items-center align-middle justify-center text-sm text-gray-500 rounded-lg  focus:outline-none focus:ring-2  
+        <div className="flex w-max gap-5">
+          <button
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+            className="z-20 inline-flex items-center align-middle justify-center text-sm text-gray-500 rounded-lg  focus:outline-none focus:ring-2  
                   
           "
-          // aria-expanded={isOpen ? "true" : "false"}
-        >
-          <span className="bg-clip-text text-transparent bg-gradient-to-br from-orange-300 to-orange-600 text-lg tracking-wider font-extrabold">
-            {isOpen ? "CLOSE" : "MENU"}
-          </span>
-          {/* <span className="sr-only">Open main menu</span>
-          <svg
-            className="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+            // aria-expanded={isOpen ? "true" : "false"}
           >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h15M1 7h15M1 13h15"
+            {/* <span className="bg-clip-text text-transparent bg-gradient-to-br from-orange-300 to-orange-600 text-lg tracking-wider font-extrabold">
+              {isOpen ? "CLOSE" : "MENU"}
+            </span> */}
+            <Hamburger
+              toggled={isOpen}
+              toggle={setIsOpen}
+              size={25}
+              color="#f48436"
             />
-          </svg> */}
-        </button>
+          </button>
+          <Link
+            href="mailto:dimasnyoman1@gmail.com"
+            className="hidden md:block border-2 border-teal-400 w-max px-5  py-2 text-sm md:text-base font-semibold lg:font-normal rounded-full text-teal-300 transition duration-300 hover:bg-teal-500 hover:text-black"
+          >
+            Email Me
+          </Link>
+        </div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0 }}

@@ -18,7 +18,7 @@ function ProjectList() {
         <h1 className="py-10 text-4xl md:text-5xl lg:text-6xl font-extrabold md:mb-10 tracking-wider text-slate-200 xl:text-center">
           Projects
         </h1>
-        <div className="grid grid-cols-1 flex-1 gap-5 sm:grid-cols-1 lg:grid-cols-2 lg:gap-9 xl:grid-cols-3">
+        <div className="grid grid-cols-1 flex-1 gap-5 sm:grid-cols-1 lg:grid-cols-2 lg:gap-9 2xl:grid-cols-3">
           <ProjectsItem />
         </div>
       </motion.div>

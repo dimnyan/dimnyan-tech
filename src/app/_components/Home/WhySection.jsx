@@ -36,23 +36,23 @@ const WhySection = () => {
         <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-white text-center">
           Why Me?
         </h1>
-        <div className="flex flex-wrap lg:flex-row gap-20 justify-center">
+        <div className="flex flex-wrap lg:flex-row gap-20 justify-between">
           {datas.map((item, index) => (
             <div
               key={index}
-              className="flex-1 min-w-[260px] max-w-[260px] mx-auto"
+              className="flex-1 min-w-[260px] max-w-[350px] mx-auto"
             >
               <Image
                 src={item.image}
                 alt={item.title}
                 height={500}
                 width={500}
-                className="object-cover bg-center w-[250px] h-[250px] rounded-xl"
+                className="object-cover bg-cover w-[450px] h-[250px] rounded-xl"
               />
               <h3 className="font-bold text-xl w-fit mt-5 mb-3">
                 {item.title}
               </h3>
-              <p className="text-slate-300 max-w-[260px]">{item.desc}</p>
+              <p className="text-slate-300">{item.desc}</p>
             </div>
           ))}
         </div>

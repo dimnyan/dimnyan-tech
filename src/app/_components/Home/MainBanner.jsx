@@ -16,10 +16,10 @@ const MainBanner = () => {
   return (
     <div
       style={{ color: "#ECECF9" }}
-      className="bg-gray-900 px-12 align-middle md:px-24 2xl:px-72 lg:min-h-screen"
+      className="bg-gray-900 px-12 align-middle md:px-24 lg:min-h-screen"
     >
-      <div className="lg:flex xl:pt-24">
-        <div className="max-w-screen-xl py-20 mx-auto flex flex-col justify-center">
+      <div className="lg:flex xl:pt-24 gap-3 max-w-screen-xl mx-auto">
+        <div className="py-20 mx-auto flex flex-col justify-center">
           <TextGenerateEffect
             words={words}
             className="text-5xl md:text-8xl font-extrabold mb-4 text-slate-300"
@@ -39,14 +39,14 @@ const MainBanner = () => {
             <div className="flex gap-5 md:flex-row md:gap-5">
               <Link
                 href="#scroll"
-                className="font-semibold border-2 border-orange-400 bg-gradient-to-br from-orange-300 to-orange-600 w-max text-black px-5 mt-6 md:mt-6 py-2 text-sm md:text-base rounded-full hover:bg-blue-100 lg:font-normal transition duration-300"
+                className="font-semibold border-2 border-orange-500 bg-orange-500 w-max text-white px-5 mt-6 md:mt-6 py-2 text-sm md:text-base rounded-full hover:bg-transparent lg:font-normal transition duration-300"
               >
                 Learn More
               </Link>
 
               <Link
                 href="mailto:dimasnyoman1@gmail.com"
-                className="border-2 border-teal-400 w-max px-5 mt-6 md:mt-6 py-2 text-sm md:text-base font-semibold lg:font-normal rounded-full bg-gradient-to-br from-teal-300 to-teal-600 text-black transition duration-300"
+                className="border-2 border-teal-400 w-max px-5 mt-6 md:mt-6 py-2 text-sm md:text-base font-semibold lg:font-normal rounded-full text-teal-300 transition duration-300 hover:bg-teal-500 hover:text-black"
               >
                 Email Me
               </Link>
