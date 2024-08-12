@@ -79,7 +79,7 @@ function IntroduceMe() {
             </li>
           ))}
         </ul>
-        <p className="text-center text-4xl font-bold mt-20 mb-8 md:text-6xl md:my-20 xl:my-32 text-slate-200 tracking-wider">
+        {/* <p className="text-center text-4xl font-bold mt-20 mb-8 md:text-6xl md:my-20 xl:my-32 text-slate-200 tracking-wider">
           Experiences
         </p>
         <ul className="flex flex-col justify-between gap-5 xl:gap-0 text-center xl:grid xl:grid-cols-3">
@@ -105,7 +105,7 @@ function IntroduceMe() {
               )}
             </div>
           ))}
-        </ul>
+        </ul> */}
       </motion.div>
     </div>
   );
