@@ -26,7 +26,7 @@ const FeaturedProject = () => {
         style={{ color: "#ECECF9" }}
       >
         <h1 className="sticky py-10 text-4xl md:text-6xl font-extrabold md:mb-10 tracking-wider text-white text-center">
-          Featured Projects
+          Top Projects
         </h1>
 
         {/* <p className="sticky z-10 top-20">Featured</p> */}

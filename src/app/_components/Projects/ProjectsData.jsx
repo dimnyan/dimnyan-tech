@@ -3,6 +3,7 @@ const Projects = [
     title: "Tap Media Derbala Landing Page",
     description:
       "The Tap Media Derbala Landing Page is a dynamic web application designed to showcase the IT services offered by Tap Media Derbala. The company specializes in media freelance services, including website creation and content creation. The landing page will serve as the primary online platform for attracting potential clients and providing essential information about the company's offerings.",
+    livePageLink: "https://tapderbala.com/",
     imageUrl: "/images/derbala-thumbnail.png",
     features: [
       {
@@ -31,6 +32,7 @@ const Projects = [
     title: "LSP Gatensi Landing Page",
     description:
       "The LSP Gatensi Landing Page is a web application designed to serve as the primary online presence for LSP Gatensi, a company specializing in civil engineer certification. The platform provides essential information about the company's role in certifying civil engineers under the auspices of the Indonesian Ministry of Public Works and Public Housing (PUPR) and the National Certification Agency (BNSP).",
+    livePageLink: "https://lspgatensi.id/",
     imageUrl: "/images/lsp-thumbnail.png",
     features: [
       {

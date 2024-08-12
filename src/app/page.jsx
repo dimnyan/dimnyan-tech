@@ -5,6 +5,7 @@ import MainBanner from "@/app/_components/Home/MainBanner";
 import FeaturedProject from "./_components/Home/FeaturedProject";
 import { Analytics } from "@vercel/analytics/react";
 import Certifications from "./_components/Home/Certifications";
+import WhySection from "./_components/Home/WhySection";
 
 export const metadata = {
   title: "Nyoman Lanang K E | dimnyan",
@@ -19,8 +20,9 @@ export default function Home() {
       <Analytics />
 
       <MainBanner />
-      <Certifications />
+      <WhySection />
       <FeaturedProject />
+      <Certifications />
       <IntroduceMe />
     </>
   );
