@@ -49,7 +49,7 @@ const Navbar = () => {
   ];
   return (
     <nav
-      className="border-gray-200 bg-gray-900 sticky top-0 z-10 px-5 md:px-24"
+      className="border-gray-200 bg-gray-900 sticky top-0 z-50 px-5 md:px-24"
       ref={scope}
     >
       <motion.div

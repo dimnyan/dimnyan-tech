@@ -16,9 +16,9 @@ const MainBanner = () => {
   return (
     <div
       style={{ color: "#ECECF9" }}
-      className="bg-gray-900 px-12 align-middle md:px-24 lg:min-h-screen"
+      className="bg-gray-900 px-12 align-middle md:px-24 overflow-hidden w-full lg:min-h-screen"
     >
-      <div className="lg:flex xl:pt-24 gap-3 max-w-screen-xl mx-auto">
+      <div className="relative lg:flex xl:pt-24 gap-3 max-w-screen-xl mx-auto z-10">
         <div className="py-20 mx-auto flex flex-col justify-center">
           <TextGenerateEffect
             words={words}
@@ -113,6 +113,24 @@ const MainBanner = () => {
           size="2xl"
           style={{ color: "#efefef" }}
           className="md:w-16 md:h-32"
+        />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 2,
+        }}
+        className="overflow-hidden inset-x-0 absolute top-32 w-full filter blur-3xl"
+      >
+        <Image
+          src={"/assets/shapedimnyan.png"}
+          alt="shape"
+          height={1080}
+          width={1080}
+          className="relative left-10 opacity-20"
         />
       </motion.div>
     </div>
