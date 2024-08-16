@@ -16,7 +16,7 @@ const MainBanner = () => {
   return (
     <div
       style={{ color: "#ECECF9" }}
-      className="bg-gray-900 px-12 align-middle md:px-24 overflow-hidden w-full lg:min-h-screen"
+      className="bg-gray-900 px-12 align-middle md:px-24 w-full lg:min-h-screen"
     >
       <div className="relative lg:flex xl:pt-24 gap-3 max-w-screen-xl mx-auto z-10">
         <div className="py-20 mx-auto flex flex-col justify-center">
@@ -123,14 +123,14 @@ const MainBanner = () => {
           duration: 0.8,
           delay: 2,
         }}
-        className="overflow-hidden inset-x-0 absolute top-32 w-full filter blur-3xl"
+        className="absolute top-32 filter blur-3xl overflow-hidden"
       >
         <Image
           src={"/assets/shapedimnyan.png"}
           alt="shape"
           height={1080}
           width={1080}
-          className="relative left-10 opacity-20"
+          className="left-10 opacity-20"
         />
       </motion.div>
     </div>
