@@ -123,14 +123,14 @@ const MainBanner = () => {
           duration: 0.8,
           delay: 2,
         }}
-        className="absolute top-32 filter blur-3xl overflow-hidden"
+        className="absolute top-32 filter blur-3xl"
       >
         <Image
           src={"/assets/shapedimnyan.png"}
           alt="shape"
           height={1080}
           width={1080}
-          className="left-10 opacity-20"
+          className="left-10 opacity-40 md:opacity-20"
         />
       </motion.div>
     </div>
