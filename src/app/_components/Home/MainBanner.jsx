@@ -130,7 +130,7 @@ const MainBanner = () => {
           alt="shape"
           height={1080}
           width={1080}
-          className="left-10 opacity-20"
+          className="left-10 opacity-40 md:opacity-20"
         />
       </motion.div>
     </div>
