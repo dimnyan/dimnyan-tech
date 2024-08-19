@@ -1,22 +1,26 @@
 "use client";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faReact,
-  faUbuntu,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { TextGenerateEffect } from "../ui/textGenerateEffect";
+import { useRef } from "react";
 
 const MainBanner = () => {
-  const words = "Nyoman Lanang Kresna Erlangga";
+  const words = "Your Vision, My Expertise";
+  const mainRef = useRef();
+  const { scrollYProgress } = useScroll({
+    target: mainRef,
+    offset: ["start start", "end start"],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   return (
     <div
+      ref={mainRef}
       style={{ color: "#ECECF9" }}
-      className="bg-gray-900 px-12 align-middle md:px-24 w-full lg:min-h-screen"
+      className="bg-gray-900 pt-10 px-12 align-middle md:px-24 w-full lg:min-h-screen"
     >
       <div className="relative lg:flex xl:pt-24 gap-3 max-w-screen-xl mx-auto z-10">
         <div className="py-20 mx-auto flex flex-col justify-center">
@@ -32,8 +36,8 @@ const MainBanner = () => {
               delay: 2,
             }}
           >
-            <p className="text-slate-400 text- md:text-lg text-left py-2">
-              Experienced Software Web Developer
+            <p className="text-slate-200 text-xl text-left py-6">
+              Hello, I&apos;m Nyoman. Experienced Software Web Developer
             </p>
 
             <div className="flex gap-5 md:flex-row md:gap-5">
@@ -62,6 +66,16 @@ const MainBanner = () => {
           }}
           className="m-auto"
         >
+          <motion.img
+            src="/assets/pyramid.png"
+            width={200}
+            height={200}
+            alt="Dimas Nyoman Profile Pict"
+            className="hidden md:block absolute -top-64 -left-32"
+            style={{
+              translateY: translateY,
+            }}
+          />
           <Image
             src="/images/my-icon.png"
             width={350}
@@ -70,58 +84,27 @@ const MainBanner = () => {
             className="m-auto pb-16 max-w-6xl md:px-3 md:w-auto"
             priority="true"
           />
+          <motion.img
+            src="/assets/prizm.png"
+            width={250}
+            height={250}
+            alt="Dimas Nyoman Profile Pict"
+            className="hidden md:block absolute -right-10"
+            style={{
+              translateY: translateY,
+            }}
+          />
         </motion.div>
       </div>
-      <motion.div
-        initial={{ y: 30, opacity: 0 }}
-        animate={{ y: 1, opacity: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 2,
-        }}
-        className="mx-auto flex gap-6 justify-center py-20 xl:pt-16"
-      >
-        <FontAwesomeIcon
-          icon={faReact}
-          style={{ color: "#06b6d4" }}
-          size="2xl"
-          className="md:w-16 md:h-32"
-        />
-
-        <Image
-          src={"/images/tailwind-css.png"}
-          alt="tailwind"
-          width={45}
-          height={15}
-          className="my-1 md:w-16 md:h-32 md:py-10"
-        />
-        <Image
-          src={"/images/nextjs.png"}
-          alt="nextjs"
-          width={35}
-          height={15}
-          className="md:w-16 md:h-32 md:py-7"
-        />
-        <FontAwesomeIcon
-          icon={faUbuntu}
-          size="2xl"
-          style={{ color: "#ffa600" }}
-          className="md:w-16 md:h-32"
-        />
-        <FontAwesomeIcon
-          icon={faGithub}
-          size="2xl"
-          style={{ color: "#efefef" }}
-          className="md:w-16 md:h-32"
-        />
-      </motion.div>
 
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ scale: 0.7 }}
+        animate={{ scale: 1 }}
         transition={{
-          duration: 0.8,
-          delay: 2,
+          duration: 3,
+          repeat: Infinity,
+          ease: "easeInOut",
+          repeatType: "mirror",
         }}
         className="absolute top-32 filter blur-3xl"
       >

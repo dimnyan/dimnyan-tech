@@ -2,13 +2,13 @@
 import Footer from "./_components/Misc/Footer";
 import Navbar from "./_components/Misc/Navbar";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const dm = DM_Sans({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={dm.className}>
         <Navbar />
         {children}
         <Footer />
