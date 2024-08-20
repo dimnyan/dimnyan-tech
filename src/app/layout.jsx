@@ -9,9 +9,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={dm.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="bg-gray-900">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -48,16 +48,14 @@ const Navbar = () => {
     { name: "projects", path: "/projects" },
   ];
   return (
-    <nav
-      className="border-gray-200 bg-gray-900 sticky top-0 z-50 px-5 md:px-24"
-      ref={scope}
-    >
+    <nav className="border-gray-200 sticky top-0 z-50" ref={scope}>
+      <div className="absolute -z-10 w-full h-full bg-slate-900/60 filter blur-2xl"></div>
       <motion.div
         initial={{ y: 15, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, delay: 2 }}
         // style={{ scale: scaler }}
-        className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4"
+        className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 z-50 px-5 md:px-24"
       >
         <Link className="flex items-center gap-4" href="/">
           <Image
