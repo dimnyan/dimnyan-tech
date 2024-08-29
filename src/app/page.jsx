@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Certifications from "./_components/Home/Certifications";
 import WhySection from "./_components/Home/WhySection";
 import LogosSection from "./_components/Home/Logos";
+import CTASection from "./_components/Home/CTASection";
 
 export const metadata = {
   title: "Nyoman Lanang K E | dimnyan",
@@ -25,7 +26,8 @@ export default function Home() {
       <FeaturedProject />
       <WhySection />
       <Certifications />
-      <IntroduceMe />
+      {/* <IntroduceMe /> */}
+      <CTASection />
     </>
   );
 }

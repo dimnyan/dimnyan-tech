@@ -92,7 +92,7 @@ const Navbar = () => {
           </button>
           <Link
             href="mailto:dimasnyoman1@gmail.com"
-            className="hidden md:block border-2 border-teal-400 w-max px-5  py-2 text-sm md:text-base font-semibold lg:font-normal rounded-full text-teal-300 transition duration-300 hover:bg-teal-500 hover:text-black"
+            className="hidden md:block border-2 border-teal-400 w-max px-5 my-auto py-1 text-sm md:text-base font-semibold lg:font-normal rounded-full text-teal-300 transition duration-300 hover:bg-teal-500 hover:text-black"
           >
             Email Me
           </Link>

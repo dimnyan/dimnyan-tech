@@ -65,13 +65,11 @@ function Footer() {
               />
             </Link>
 
-            <Link
+            {/* <Link
               href="https://www.instagram.com/dimnyan_dev"
               target="_blank"
               rel="noopener noreferrer"
-              // className="text-gray-400 hover:text-orange-500 mt-3"
             >
-              {/* <FontAwesomeIcon icon={faInstagram} size="2xl" /> */}
               <Image
                 src={"/images/Instagram.svg"}
                 width={30}
@@ -79,7 +77,7 @@ function Footer() {
                 alt=""
                 className="h-10 w-10 mr-7 mt-3"
               />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

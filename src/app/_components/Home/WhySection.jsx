@@ -1,4 +1,10 @@
 "use client";
+import {
+  faDesktop,
+  faDiagramProject,
+  faTruck,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -8,16 +14,19 @@ const WhySection = () => {
       title: "Simplifying Your Business Process",
       image: "/data.jpg",
       desc: "Innovatived solutions are designed to optimize your workflow, increase efficiency, and save you time and money.",
+      icon: faDiagramProject,
     },
     {
       title: "Personalized UI/UX Design",
       image: "/phone.jpg",
       desc: "Created visually stunning and user-friendly interfaces tailored to your target audience, ensuring a seamless and enjoyable experience.",
+      icon: faDesktop,
     },
     {
       title: "Reliable Project Delivery",
       image: "/delivery.jpg",
       desc: "Dedicated to delivering projects on time and within budget, while maintaining the highest quality standards.",
+      icon: faTruck,
     },
   ];
   return (
@@ -42,17 +51,16 @@ const WhySection = () => {
               key={index}
               className="flex-1 min-w-[260px] max-w-[350px] mx-auto"
             >
-              <Image
-                src={item.image}
-                alt={item.title}
-                height={500}
-                width={500}
-                className="object-cover bg-cover w-[450px] h-[250px] rounded-xl"
-              />
-              <h3 className="font-bold text-xl w-fit mt-5 mb-3">
-                {item.title}
-              </h3>
-              <p className="text-slate-300">{item.desc}</p>
+              <div className="flex flex-row">
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  className="text-blue-400 my-auto mx-3 w-6 h-6 xl:w-8"
+                />
+                <h3 className="mx-2 tracking-wider font-bold text-xl w-fit mt-5 mb-3">
+                  {item.title}
+                </h3>
+              </div>
+              <p className="text-slate-400">{item.desc}</p>
             </div>
           ))}
         </div>
