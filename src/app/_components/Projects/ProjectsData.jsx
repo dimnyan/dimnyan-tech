@@ -1,5 +1,25 @@
 const Projects = [
   {
+    title: "Becca App",
+    description:
+      "Becca App is a Mobile App for consulting councelors using React Native Expo Go",
+    livePageLink: "#",
+    imageUrl: "/images/beccaApp-thumbnail.png",
+    features: [
+      {
+        title: "Personality Test",
+      },
+      {
+        title: "Blog Posts",
+      },
+      {
+        title: "Chat to Counsellor",
+      },
+    ],
+    techStack: ["React Native: A JS framework for building Mobile App"],
+    additionalDesc: "",
+  },
+  {
     title: "Tap Media Derbala Landing Page",
     description:
       "The Tap Media Derbala Landing Page is a dynamic web application designed to showcase the IT services offered by Tap Media Derbala. The company specializes in media freelance services, including website creation and content creation. The landing page will serve as the primary online platform for attracting potential clients and providing essential information about the company's offerings.",
