@@ -31,11 +31,11 @@ const FeaturedProject = () => {
 
         {/* <p className="sticky z-10 top-20">Featured</p> */}
 
-        <ul className="grid grid-cols-1 flex-1 gap-5 xl:grid-cols-2 lg:gap-9">
+        <ul className="grid grid-cols-1 flex-1 gap-10 xl:grid-cols-2 lg:gap-9">
           {topProjects.map((item) => (
             <li key={item.title}>
               <CardContainer className="inter-var">
-                <CardBody className="relative group/card hover:shadow-2xlhover:shadow-emerald-500/[0.1] bg-slate-900 border-black/[0.1] w-auto sm:w-[35rem] md:w-[40rem] h-auto rounded-xl p-6 border  ">
+                <CardBody className="relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] bg-slate-900 border-black/[0.1] w-auto h-auto rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold  text-white line-clamp-1 cursor-pointer"

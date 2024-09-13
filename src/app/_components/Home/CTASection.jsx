@@ -13,6 +13,9 @@ const CTASection = () => {
               Enhance Your Business Presence
             </h1>
           </div>
+          <div className="pt-5 font-bold text-center">
+            Get more Customers for your Business by having a eye-catching Website 
+          </div>
           <div className="relative z-20 my-auto">
             <p className="py-1 text-center my-10 xl:text-lg">
               Contact Me Today for a Free Consultation
