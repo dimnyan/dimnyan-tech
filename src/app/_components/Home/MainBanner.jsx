@@ -90,7 +90,7 @@ const MainBanner = () => {
             width={250}
             height={250}
             alt="Dimas Nyoman Profile Pict"
-            className="absolute -right-20 w-56"
+            className="hidden md:block absolute -right-20 w-56 z-50"
             // className="hidden lg:block absolute -right-10"
             style={{
               translateY: translateY,
