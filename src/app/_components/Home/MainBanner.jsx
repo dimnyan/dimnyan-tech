@@ -37,7 +37,7 @@ const MainBanner = () => {
             }}
           >
             <p className="text-slate-200 text-xl text-left py-6">
-              Hello, I&apos;m Nyoman. Experienced Software Web Developer
+              Hello, I&apos;m Nyoman. Experienced Fullstack Software Developer
             </p>
 
             <div className="flex gap-5 md:flex-row md:gap-5">
