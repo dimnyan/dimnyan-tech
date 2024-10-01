@@ -122,7 +122,7 @@ const Projects = [
     title: "F1 Standings Tracker",
     description:
       'The "F1 Standings Tracker" is a web frontend project built using ReactJS that allows Formula 1 enthusiasts to stay updated with the latest drivers standings in the F1 racing season. This dynamic and user-friendly application fetches data from an API source to provide real-time information about the current standings of F1 drivers, their points, and their team affiliations.',
-    livePageLink: "https://f1.dimnyan.tech/",
+    livePageLink: "https://f1.dimnyan.dev/",
     sourceCodeLink: "https://github.com/dimnyan/f1-app",
 
     imageUrl: "/images/f1-thumbnail.png",
@@ -284,7 +284,7 @@ const Projects = [
     title: "Real-Time Markdown Editor",
     description:
       "This project is a web application built with React and Redux that allows users to write and edit text in Markdown format, providing a live preview of the rendered HTML.",
-    livePageLink: "http://markdown.dimnyan.tech",
+    livePageLink: "http://markdown.dimnyan.dev",
     sourceCodeLink: "https://github.com/dimnyan/fe-challenge-2-freecodecamp",
     imageUrl: "/images/markdown-thumbnail.png",
     features: [
@@ -315,7 +315,7 @@ const Projects = [
       {
         title: "Custom Domain",
         list: [
-          "For a professional touch, the application is accessible at the dedicated domain markdown.dimnyan.tech, making it readily accessible and memorable",
+          "For a professional touch, the application is accessible at the dedicated domain markdown.dimnyan.dev, making it readily accessible and memorable",
         ],
       },
     ],
@@ -324,7 +324,7 @@ const Projects = [
       "State Management: Redux (JavaScript library for predictable state management)",
       "React Markdown Library (e.g., react-markdown): Enables parsing of Markdown syntax and rendering the corresponding HTML",
       "Deployment: Vercel (platform for deployment and hosting)",
-      "Domain: markdown.dimnyan.tech (custom domain for accessibility)",
+      "Domain: markdown.dimnyan.dev (custom domain for accessibility)",
     ],
     additionalDesc:
       "This project is ideal for anyone interested in learning React, Redux, and building interactive web applications. It serves as a valuable tool for earning the FreeCodeCamp certification and showcasing web development expertise in working with rich text formats like Markdown.",
@@ -333,7 +333,7 @@ const Projects = [
     title: "Interactive Drum Pad",
     description:
       "This project is a web-based drum pad application built with React and Redux, allowing users to create beats by triggering audio samples of drum sounds.",
-    livePageLink: "http://drumpad.dimnyan.tech",
+    livePageLink: "http://drumpad.dimnyan.dev",
     sourceCodeLink: "https://github.com/dimnyan/fe-challenge-3-freecodecamp",
     imageUrl: "/images/drumpad-thumbnail.png",
     features: [
@@ -364,7 +364,7 @@ const Projects = [
       {
         title: "Custom Domain",
         list: [
-          "For a professional touch, the application is accessible at the dedicated domain drumpad.dimnyan.tech, making it readily accessible and memorable",
+          "For a professional touch, the application is accessible at the dedicated domain drumpad.dimnyan.dev, making it readily accessible and memorable",
         ],
       },
     ],
@@ -373,7 +373,7 @@ const Projects = [
       "State Management: Redux (JavaScript library for predictable state management)",
       "Document Event Listener: Captures key presses from the user's keyboard.",
       "Deployment: Vercel (platform for deployment and hosting)",
-      "Domain: drumpad.dimnyan.tech (custom domain for accessibility)",
+      "Domain: drumpad.dimnyan.dev (custom domain for accessibility)",
     ],
     additionalDesc:
       "This project is designed for anyone interested in learning React, Redux, and building interactive web applications with sound integration. It serves as a valuable tool for earning the FreeCodeCamp certification and showcasing web development skills in creating engaging user experiences.",
@@ -382,7 +382,7 @@ const Projects = [
     title: "Dynamic Quote Generator ",
     description:
       "This project showcases a captivating single-page application (SPA) built with React and Redux for state management. It leverages a public quote API to fetch inspiring quotes, keeping users engaged with a continuous stream of wisdom.",
-    livePageLink: "http://quotes.dimnyan.tech",
+    livePageLink: "http://quotes.dimnyan.dev",
     sourceCodeLink: "https://github.com/dimnyan/fe-challenge-1-freecodecamp",
     imageUrl: "/images/quotes-thumbnail.png",
     features: [
@@ -413,7 +413,7 @@ const Projects = [
       {
         title: "Custom Domain",
         list: [
-          "For a professional touch, the application is accessible at the dedicated domain quotes.dimnyan.tech, making it readily accessible and memorable",
+          "For a professional touch, the application is accessible at the dedicated domain quotes.dimnyan.dev, making it readily accessible and memorable",
         ],
       },
     ],
@@ -422,7 +422,7 @@ const Projects = [
       "State Management: Redux (JavaScript library for predictable state management)",
       "API Fetching: Public Quote API (source for retrieving quotes)",
       "Deployment: Vercel (platform for deployment and hosting)",
-      "Domain: quotes.dimnyan.tech (custom domain for accessibility)",
+      "Domain: quotes.dimnyan.dev (custom domain for accessibility)",
     ],
     additionalDesc:
       "I hope this project description effectively captures the essence of your quote generator. Feel free to tailor it further to highlight any specific aspects or functionalities you'd like to emphasize.",
