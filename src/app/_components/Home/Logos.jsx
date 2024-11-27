@@ -2,7 +2,17 @@
 import { motion } from "framer-motion";
 
 const LogosSection = () => {
-  const logos = ["spring boot","mysql", "github", "nodejs", "react", "next", "golang", "postgresql", "mongo"];
+  const logos = [
+    "nodejs",
+    "spring boot",
+    "postgresql",
+    "react",
+    "next",
+    "golang",
+    "mysql",
+    "mongo",
+    "github",
+  ];
   return (
     <div className="bg-slate-200 py-5 md:py-12 overflow-hidden">
       <div className="flex [mask-image:linear-gradient(to_right,transparent,black,black,transparent)]">
@@ -12,7 +22,7 @@ const LogosSection = () => {
             translateX: "-100%",
           }}
           transition={{
-            duration: 20,
+            duration: 15,
             repeat: Infinity,
             ease: "linear",
             repeatType: "loop",
@@ -25,7 +35,7 @@ const LogosSection = () => {
               alt=""
               width={200}
               height={45}
-              className="my-auto w-[100px] md:w-[200px]"
+              className="my-auto w-[90px] md:w-[200px]"
             />
           ))}
           {logos.map((logo) => (
@@ -35,7 +45,7 @@ const LogosSection = () => {
               alt=""
               width={200}
               height={45}
-              className="my-auto w-[100px] md:w-[200px]"
+              className="my-auto w-[90px] md:w-[200px]"
             />
           ))}
         </motion.div>
