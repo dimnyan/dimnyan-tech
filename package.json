@@ -18,6 +18,7 @@
     "autoprefixer": "10.4.16",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "dimnyan-tech": "file:",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.2",
     "framer-motion": "^10.18.0",
