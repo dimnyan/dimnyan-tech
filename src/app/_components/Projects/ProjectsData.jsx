@@ -23,7 +23,6 @@ const Projects = [
     title: "Tap Media Derbala Landing Page",
     description:
       "The Tap Media Derbala Landing Page is a dynamic web application designed to showcase the IT services offered by Tap Media Derbala. The company specializes in media freelance services, including website creation and content creation. The landing page will serve as the primary online platform for attracting potential clients and providing essential information about the company's offerings.",
-    livePageLink: "https://tapderbala.com/",
     imageUrl: "/images/derbala-thumbnail.png",
     features: [
       {
@@ -122,7 +121,7 @@ const Projects = [
     title: "F1 Standings Tracker",
     description:
       'The "F1 Standings Tracker" is a web frontend project built using ReactJS that allows Formula 1 enthusiasts to stay updated with the latest drivers standings in the F1 racing season. This dynamic and user-friendly application fetches data from an API source to provide real-time information about the current standings of F1 drivers, their points, and their team affiliations.',
-    livePageLink: "https://f1.dimnyan.dev/",
+    // livePageLink: "https://f1.dimnyan.dev/",
     sourceCodeLink: "https://github.com/dimnyan/f1-app",
 
     imageUrl: "/images/f1-thumbnail.png",
@@ -131,7 +130,6 @@ const Projects = [
         title: "Real-Time Standings",
         list: [
           "The application fetches live data from a public API source, providing users with up-to-the-minute information on the current Formula 1 drivers' standings.",
-          ,
           "Users can stay informed about changes in rankings, points, and team affiliations as the racing season progresses.",
         ],
       },
@@ -139,7 +137,6 @@ const Projects = [
         title: "Responsive Design",
         list: [
           "The application is designed to be responsive, ensuring a seamless experience across different devices, including desktops, tablets, and mobile phones.",
-          ,
           "Responsive design elements adapt to various screen sizes, maintaining functionality and aesthetics.",
         ],
       },
@@ -284,7 +281,7 @@ const Projects = [
     title: "Real-Time Markdown Editor",
     description:
       "This project is a web application built with React and Redux that allows users to write and edit text in Markdown format, providing a live preview of the rendered HTML.",
-    livePageLink: "http://markdown.dimnyan.dev",
+    // livePageLink: "http://markdown.dimnyan.dev",
     sourceCodeLink: "https://github.com/dimnyan/fe-challenge-2-freecodecamp",
     imageUrl: "/images/markdown-thumbnail.png",
     features: [
@@ -333,7 +330,7 @@ const Projects = [
     title: "Interactive Drum Pad",
     description:
       "This project is a web-based drum pad application built with React and Redux, allowing users to create beats by triggering audio samples of drum sounds.",
-    livePageLink: "http://drumpad.dimnyan.dev",
+    // livePageLink: "http://drumpad.dimnyan.dev",
     sourceCodeLink: "https://github.com/dimnyan/fe-challenge-3-freecodecamp",
     imageUrl: "/images/drumpad-thumbnail.png",
     features: [
@@ -382,7 +379,7 @@ const Projects = [
     title: "Dynamic Quote Generator ",
     description:
       "This project showcases a captivating single-page application (SPA) built with React and Redux for state management. It leverages a public quote API to fetch inspiring quotes, keeping users engaged with a continuous stream of wisdom.",
-    livePageLink: "http://quotes.dimnyan.dev",
+    // livePageLink: "http://quotes.dimnyan.dev",
     sourceCodeLink: "https://github.com/dimnyan/fe-challenge-1-freecodecamp",
     imageUrl: "/images/quotes-thumbnail.png",
     features: [
@@ -428,45 +425,5 @@ const Projects = [
       "I hope this project description effectively captures the essence of your quote generator. Feel free to tailor it further to highlight any specific aspects or functionalities you'd like to emphasize.",
   },
 
-  // {
-  //   title: "Penguin Wave Animation - HTML CSS",
-  //   description:
-  //     "The Penguin Wave Animation project is a fun web animation created using HTML and CSS. It features an adorable penguin character with a waving hand, bringing life to the web page users with its playful movement.",
-  //   livePageLink: "http://dimnyan.000webhostapp.com/Projects/penguinwave.html",
-  //   sourceCodeLink:
-  //     "https://github.com/dimnyan/freeCodeCamp-responsiveDesign/tree/main/16.%20Penguin%20Wave",
-
-  //   imageUrl: "/images/penguin-thumbnail.png",
-  //   features: [
-  //     {
-  //       title: "HTML Structure",
-  //       list: [
-  //         "The HTML structure is clean and straightforward, providing a solid foundation for the penguin animation.",
-  //         "Elements are appropriately organized to support the seamless integration of the penguin character into various web pages.",
-  //       ],
-  //     },
-  //     {
-  //       title: "CSS Styling",
-  //       list: [
-  //         "CSS styles are thoughtfully applied to bring the penguin to life, with attention to details such as color, shading, and proportions.",
-  //         "The code is well-organized and commented, making it easy for developers to understand and customize the animation to suit different themes or branding.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Adorable Penguin Character",
-  //       list: [
-  //         "The project stars a cute penguin character designed to evoke a sense of joy and playfulness.",
-  //         "The penguin comes to life with a dynamic wave animation, creating a lighthearted and entertaining element for website visitors.",
-  //       ],
-  //     },
-  //     {
-  //       title: "Responsive Design",
-  //       list: [
-  //         "The Penguin Wave Animation is designed to be responsive, adapting gracefully to different screen sizes and resolutions.",
-  //         "The responsive design ensures that the playful penguin can spread joy across a variety of devices, from desktops to smartphones.",
-  //       ],
-  //     },
-  //   ],
-  // },
 ];
 export default Projects;

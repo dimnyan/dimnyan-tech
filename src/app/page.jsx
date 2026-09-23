@@ -3,11 +3,12 @@
 import IntroduceMe from "@/app/_components/Home/IntroduceMe";
 import MainBanner from "@/app/_components/Home/MainBanner";
 import FeaturedProject from "./_components/Home/FeaturedProject";
-import { Analytics } from "@vercel/analytics/react";
+import {Analytics} from "@vercel/analytics/react";
 import Certifications from "./_components/Home/Certifications";
 import WhySection from "./_components/Home/WhySection";
 import LogosSection from "./_components/Home/Logos";
 import CTASection from "./_components/Home/CTASection";
+import ScrollEffect from "@/app/_components/TestComponent";
 
 export const metadata = {
   title: "Nyoman Lanang K E | dimnyan",
