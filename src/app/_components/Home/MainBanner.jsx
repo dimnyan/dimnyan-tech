@@ -79,10 +79,10 @@ const MainBanner = () => {
           />
           <Image
             src="/images/my-icon.png"
-            width={350}
-            height={350}
+            width={550}
+            height={550}
             alt="Dimas Nyoman Profile Pict"
-            className="m-auto pb-16 max-w-6xl md:px-3 md:w-auto"
+            className="m-auto pb-16 max-w-[280px] md:max-w-[400px] md:px-3"
             priority="true"
           />
           <motion.img

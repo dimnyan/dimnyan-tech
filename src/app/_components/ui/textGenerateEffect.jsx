@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { cn } from "/utils/cn";
+import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({ words, className }) => {
   const [scope, animate] = useAnimate();
@@ -23,7 +23,7 @@ export const TextGenerateEffect = ({ words, className }) => {
     return (
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
-          if (idx == 2 || idx == 3) {
+          if (idx === 2 || idx === 3) {
             return (
               <motion.span
                 key={word + idx}
