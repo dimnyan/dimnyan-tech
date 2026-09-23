@@ -4,7 +4,8 @@ import Link from "next/link";
 
 export async function generateMetadata({params}) {
     // read route params
-    const decodedSlug = await params.slug.replace(/%20/g, " ");
+    const paramsAwait = await params
+    const decodedSlug = paramsAwait.slug.replace(/%20/g, " ");
 
     const found = Projects.find((project) => project.title.includes(decodedSlug));
     const titleNew = "dimnyan | " + found.title;
@@ -16,7 +17,8 @@ export async function generateMetadata({params}) {
 }
 
 export default async function Page({params}) {
-    const decodedSlug = await params.slug.replace(/%20/g, " ");
+    const paramsAwait = await params
+    const decodedSlug = paramsAwait.slug.replace(/%20/g, " ");
 
     const found = Projects.find((project) => project.title.includes(decodedSlug));
 
